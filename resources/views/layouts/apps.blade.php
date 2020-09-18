@@ -21,16 +21,39 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-touch-fullscreen" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <link
-        href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900%7CMontserrat:300,400,500,600,700,800,900"
-        rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../app-assets/fonts/feather/style.min.css">
-    <link rel="stylesheet" type="text/css" href="../app-assets/fonts/simple-line-icons/style.css">
-    <link rel="stylesheet" type="text/css" href="../app-assets/fonts/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/perfect-scrollbar.min.css">
-    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/prism.min.css">
-    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/chartist.min.css">
-    <link rel="stylesheet" type="text/css" href="../app-assets/css/app.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('../app-assets/fonts/feather/style.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('../app-assets/fonts/simple-line-icons/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('../app-assets/fonts/font-awesome/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('../app-assets/vendors/css/perfect-scrollbar.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('../app-assets/vendors/css/prism.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('../app-assets/vendors/css/chartist.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('../app-assets/css/app.css')}}">
+    <link rel="stylesheet" href="'{{ asset('ecobba/assets/css/app.min.css')}}">
+    <!-- Template CSS -->
+
+    <!-- Custom style CSS -->
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    {{--    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />--}}
+
+
+    <!---Fontawesome css-->
+    <link href="{{ asset('/assets/plugins/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
+
+    <!---Ionicons css-->
+    <link href="{{ asset('/assets/plugins/ionicons/css/ionicons.min.css')}}" rel="stylesheet">
+
+    <!---Typicons css-->
+    <link href="{{ asset('/assets/plugins/typicons.font/typicons.css')}}" rel="stylesheet">
+
+    <!---Feather css-->
+
+    <!---Jquery.mCustomScrollbar css-->
+
+
+
 </head>
 <body data-col="2-columns" class=" 2-columns ">
 
@@ -51,80 +74,31 @@
 
 </div>
 
-{{--       <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">--}}
-{{--            <div class="container">--}}
-{{--                <a class="navbar-brand" href="{{ url('/') }}">--}}
-{{--                    {{ config('app.name', 'Laravel') }}--}}
-{{--                </a>--}}
-{{--                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">--}}
-{{--                    <span class="navbar-toggler-icon"></span>--}}
-{{--                </button>--}}
 
-{{--                <div class="collapse navbar-collapse" id="navbarSupportedContent">--}}
-{{--                    <!-- Left Side Of Navbar -->--}}
-{{--                    <ul class="navbar-nav mr-auto">--}}
-
-{{--                    </ul>--}}
-
-{{--                    <!-- Right Side Of Navbar -->--}}
-{{--                    <ul class="navbar-nav ml-auto">--}}
-{{--                        <!-- Authentication Links -->--}}
-{{--                        @guest--}}
-{{--                            <li class="nav-item">--}}
-{{--                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>--}}
-{{--                            </li>--}}
-{{--                            @if (Route::has('register'))--}}
-{{--                                <li class="nav-item">--}}
-{{--                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>--}}
-{{--                                </li>--}}
-{{--                            @endif--}}
-{{--                        @else--}}
-{{--                            <li class="nav-item dropdown">--}}
-{{--                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>--}}
-{{--                                    {{ Auth::user()->name }}--}}
-{{--                                </a>--}}
-
-{{--                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">--}}
-{{--                                    <a class="dropdown-item" href="{{ route('logout') }}"--}}
-{{--                                       onclick="event.preventDefault();--}}
-{{--                                                     document.getElementById('logout-form').submit();">--}}
-{{--                                        {{ __('Logout') }}--}}
-{{--                                    </a>--}}
-
-{{--                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">--}}
-{{--                                        @csrf--}}
-{{--                                    </form>--}}
-{{--                                </div>--}}
-{{--                            </li>--}}
-{{--                        @endguest--}}
-{{--                    </ul>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </nav>--}}
 
 
 
 
 <!-- BEGIN VENDOR JS-->
-<script src="../app-assets/vendors/js/core/jquery-3.3.1.min.js"></script>
-<script src="../app-assets/vendors/js/core/popper.min.js"></script>
-<script src="../app-assets/vendors/js/core/bootstrap.min.js"></script>
-<script src="../app-assets/vendors/js/perfect-scrollbar.jquery.min.js"></script>
-<script src="../app-assets/vendors/js/prism.min.js"></script>
-<script src="../app-assets/vendors/js/jquery.matchHeight-min.js"></script>
-<script src="../app-assets/vendors/js/screenfull.min.js"></script>
-<script src="../app-assets/vendors/js/pace/pace.min.js"></script>
+<script src="{{ asset('../app-assets/vendors/js/core/jquery-3.3.1.min.js')}}"></script>
+<script src="{{ asset('../app-assets/vendors/js/core/popper.min.js')}}"></script>
+<script src="{{ asset('../app-assets/vendors/js/core/bootstrap.min.js')}}"></script>
+<script src="{{ asset('../app-assets/vendors/js/perfect-scrollbar.jquery.min.js')}}"></script>
+<script src="{{ asset('../app-assets/vendors/js/prism.min.js')}}"></script>
+<script src="{{ asset('../app-assets/vendors/js/jquery.matchHeight-min.js')}}"></script>
+<script src="{{ asset('../app-assets/vendors/js/screenfull.min.js')}}"></script>
+<script src="{{ asset('../app-assets/vendors/js/pace/pace.min.js')}}"></script>
 <!-- BEGIN VENDOR JS-->
 <!-- BEGIN PAGE VENDOR JS-->
-<script src="../app-assets/vendors/js/chartist.min.js"></script>
+<script src="{{ asset('../app-assets/vendors/js/chartist.min.js')}}"></script>
 <!-- END PAGE VENDOR JS-->
 <!-- BEGIN CONVEX JS-->
-<script src="../app-assets/js/app-sidebar.js"></script>
-<script src="../app-assets/js/notification-sidebar.js"></script>
-<script src="../app-assets/js/customizer.js"></script>
+<script src="{{ asset('../app-assets/js/app-sidebar.js')}}"></script>
+<script src="{{ asset('../app-assets/js/notification-sidebar.js')}}"></script>
+<script src="{{ asset('../app-assets/js/customizer.js')}}"></script>
 <!-- END CONVEX JS-->
 <!-- BEGIN PAGE LEVEL JS-->
-<script src="../app-assets/js/dashboard-ecommerce.js"></script>
+<script src="{{ asset('../app-assets/js/dashboard-ecommerce.js')}}"></script>
 <!-- END PAGE LEVEL JS-->
 </body>
 

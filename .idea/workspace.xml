@@ -145,6 +145,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../template/convex-bootstrap-admin-dashboard-template" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp1\htdocs\Laravel\Africastalking\resources\js\components\views" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
@@ -160,7 +165,7 @@
       <option name="presentableId" value="Default" />
       <updated>1600280200432</updated>
       <workItem from="1600280201757" duration="7186000" />
-      <workItem from="1600291903714" duration="27028000" />
+      <workItem from="1600291903714" duration="40421000" />
     </task>
     <servers />
   </component>
@@ -172,27 +177,33 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1600319876245" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1600334175166">
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1600416820611">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1600334175166" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1600341781421">
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1600416820611" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1600414792330">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1600341781421" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1600414792330" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/layouts/app.blade.php</url>
-          <line>55</line>
+          <line>76</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/layouts/header.blade.php</url>
           <line>17</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/resources/js/components/apps/app.vue</url>
+          <line>50</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

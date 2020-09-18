@@ -15,7 +15,7 @@
                 <div class="card border-top my-4 border-warning border-3">
                     <div class="card-block pt-3">
 
-                        <h5 class="text-bold-500 warning float-left">Bulk SMS</h5>
+                        <p class="text-bold-300 warning float-left">Bulk SMS</p>
                         <div class="actions float-right">
                             <i class="ft-refresh-ccw mr-1 info"></i>
                             <i class="ft-maximize danger"></i>
@@ -28,7 +28,7 @@
 
                 <div class="card border-top my-4 border-warning border-3">
                     <div class="card-block pt-3">
-                        <h5 class="text-bold-500 warning float-left">Airtime</h5>
+                        <p class="text-bold-300 warning float-left">Airtime</p>
 
                         <div class="actions float-right">
                             <i class="ft-refresh-ccw mr-1 info"></i>
@@ -45,7 +45,7 @@
                 <div class="card border-top my-4 border-warning border-3">
                     <div class="card-block pt-3">
 
-                        <h5 class="text-bold-500 warning float-left">USSD</h5>
+                        <p class="text-bold-300 warning float-left">USSD</p>
                         <div class="actions float-right">
                             <i class="ft-refresh-ccw mr-1 info"></i>
                             <i class="ft-maximize danger"></i>
@@ -58,7 +58,7 @@
 
                 <div class="card border-top my-4 border-warning border-3">
                     <div class="card-block pt-3">
-                        <h5 class="text-bold-500 warning float-left">Payments</h5>
+                        <p class="text-bold-300 warning float-left">Payments</p>
 
                         <div class="actions float-right">
                             <i class="ft-refresh-ccw mr-1 info"></i>
@@ -73,8 +73,4 @@
         </div></section>
 
 </home>
-
-
-
-
 @endsection

@@ -1,5 +1,6 @@
 
 <template>
+    <div id="home"></div>
     <div class="card border-left my-lg-0 border-warning border-3">
         <div class="card-block pt-3">
             <p>App Name: Sandbox</p>

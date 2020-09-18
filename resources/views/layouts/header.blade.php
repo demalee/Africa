@@ -26,52 +26,52 @@
 
                         <li class="has-sub"><a href="#" class="menu-item">Bulk SMS</a>
                             <ul class="menu-content">
-                                <li><a href="{{url('sms/outbox')}}" class="menu-item">Outbox</a>
+                                <li><a href="" class="menu-item">Outbox</a>
                                 </li>
-                                <li><a href="{{url('sms/analytics')}}" class="menu-item">Analytics</a>
+                                <li><a href="" class="menu-item">Analytics</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="has-sub"><a href="#" class="menu-item">Premium SMS</a>
                             <ul class="menu-content">
-                                <li><a href="{{url('premium/sms')}}" class="menu-item">Outbox</a>
+                                <li><a href="" class="menu-item">Outbox</a>
                                 </li>
 
-                                <li><a href="{{url('premium/products')}}" class="menu-item">Suscription Products</a>
+                                <li><a href="" class="menu-item">Suscription Products</a>
                                 </li>
-                                <li><a href="{{url('premium/subscription')}}" class="menu-item">Create Subscription</a>
+                                <li><a href="" class="menu-item">Create Subscription</a>
                                 </li>
-                                <li><a href="{{url('premium/analytics')}}" class="menu-item">Analytics</a>
+                                <li><a href="" class="menu-item">Analytics</a>
                                 </li>
 
                             </ul>
                         </li>
                         <li class="has-sub"><a href="#" class="menu-item">Short codes</a>
                             <ul class="menu-content">
-                                <li><a href="{{url('code/codes')}}" class="menu-item">My short codes</a>
+                                <li><a href="" class="menu-item">My short codes</a>
                                 </li>
-                                <li><a href="{{url('premium/create')}}" class="menu-item">Create Shortcodes</a>
+                                <li><a href="" class="menu-item">Create Shortcodes</a>
                                 </li>
 
                             </ul>
                         </li>
                         <li class="has-sub"><a href="#" class="menu-item">Alphanumerics</a>
                             <ul class="menu-content">
-                                <li><a href="{{url('alphanumeric/alphanumeric')}}" class="menu-item">My Alphanumeric</a>
+                                <li><a href="" class="menu-item">My Alphanumeric</a>
                                 </li>
-                                <li><a href="{{url('alphanumeric/create')}}" class="menu-item">Create Alphanumeric</a>
+                                <li><a href="" class="menu-item">Create Alphanumeric</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="has-sub"><a href="#" class="menu-item">Send  URLs</a>
                             <ul class="menu-content">
-                                <li><a href="{{url('send/report')}}" class="menu-item">Delivery Reports</a>
+                                <li><a href="#" class="menu-item">Delivery Reports</a>
                                 </li>
-                                <li><a href="{{url('send/message')}}" class="menu-item">Incoming Messages</a>
+                                <li><a href="#" class="menu-item">Incoming Messages</a>
                                 </li>
-                                <li><a href="{{url('send/sms')}}" class="menu-item">Bulk SMS Opt Out</a>
+                                <li><a href="#" class="menu-item">Bulk SMS Opt Out</a>
                                 </li>
-                                <li><a href="{{url('send/notifications')}}" class="menu-item">Subscription Notifications</a>
+                                <li><a href="#" class="menu-item">Subscription Notifications</a>
                                 </li>
                             </ul>
                         </li>
@@ -82,17 +82,17 @@
                                                                                               class="menu-title">Voice</span></a>
                     <ul class="menu-content">
 
-                        <li><a href="{{url('voice/phone')}}"><i class="icon-hme"></i><span data-i18n=""
+                        <li><a href=""><i class="icon-hme"></i><span data-i18n=""
                                                                      class="menu-title">Phone number</span></a>
                         </li>
 
-                        <li><a href="{{url('voice/create')}}"><i class="icon-ome"></i><span data-i18n=""
+                        <li><a href=""><i class="icon-ome"></i><span data-i18n=""
                                                                      class="menu-title">create number</span></a>
                         </li>
-                        <li><a href="{{url('voice/sessions')}}"><i class="icon-hme"></i><span data-i18n=""
+                        <li><a href=""><i class="icon-hme"></i><span data-i18n=""
                                                                      class="menu-title">Sessions</span></a>
                         </li>
-                        <li><a href="{{url('voice/analytics')}}"><i class="icon-hoe"></i><span data-i18n=""
+                        <li><a href=""><i class="icon-hoe"></i><span data-i18n=""
                                                                      class="menu-title">Analytics</span></a>
                         </li>
                     </ul>
@@ -131,9 +131,9 @@
                         </li>
                         <li class="has-sub"><a href="#" class="menu-item">Artime Callback </a>
                             <ul class="menu-content">
-                                <li><a href="sweet-alerts.html" class="menu-item">Status Callback URL</a>
+                                <li><a href="" class="menu-item">Status Callback URL</a>
                                 </li>
-                                <li><a href="toastr.html" class="menu-item">Validation Callback URL</a>
+                                <li><a href="" class="menu-item">Validation Callback URL</a>
                                 </li>
                             </ul>
                         </li>
@@ -176,11 +176,11 @@
                 </li>
 
 
-                <li class=" nav-item"><a href="google-map.html"><i class="icon-arrow-up"></i><span data-i18n=""
+                <li class=" nav-item"><a href=""><i class="icon-arrow-up"></i><span data-i18n=""
                                                                                                    class="menu-title">Launch simulator</span></a>
                 </li>
 
-                <li class=" nav-item"><a href="google-map.html"><i class="icon-emoticon-smile"></i><span data-i18n=""
+                <li class=" nav-item"><a href=""><i class="icon-emoticon-smile"></i><span data-i18n=""
                                                                                                          class="menu-title">Join Us on Slack</span></a>
                 </li>
 
@@ -275,8 +275,16 @@
                                     class="dropdown-item py-1"><i
                                         class="ft-settings mr-2"></i><span>Settings</span></a>
                                 <div class="dropdown-divider"></div>
-                                <a href="javascript:;" class="dropdown-item"><i
-                                        class="ft-power mr-2"></i><span>Logout</span></a>
+                                <a href="javascript:;" class="dropdown-item">
+                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                                                    onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">    <i class="ft-power mr-2"></i>
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form></a>
                             </div>
                         </div>
                     </li>

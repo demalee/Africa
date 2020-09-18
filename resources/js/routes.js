@@ -1,25 +1,37 @@
-import Home from './components/home.vue'
-import inbox from './components/sms/inbox.vue'
-import outbox from "./components/sms/outbox";
-import analytics from "./components/sms/analytics";
+import  Vue from 'vue';
+import Router from 'vue-router';
+import home from "./components/views/home";
+import inbox from "./components/views/sms/inbox";
+import outbox from "./components/views/sms/outbox";
+import analytics from "./components/views/sms/analytics";
 
-export const routes = [
+Vue.use(Router);
+
+ const routes = [
     {
-        path:'/home',
+        path:'/',
+        name:'welcome',
         component:Home
     },
     {
-        path:'/sms',
-        component:outbox
+        path:'/sms/outbox',
+        name: 'outbox',
+        component:()=>import('./components/views/sms/outbox.vue')
     },
     {
-        path:'/sms',
-        component:analytics
+        path:'/sms/analytics',
+        name: 'analytics',
+        component:()=>import('./components/views/sms/analytics.vue')
     },
 
     {
-        path:'/sms',
-        component:inbox
+        path:'/sms/ibox',
+        name: 'inbox',
+        component:()=>import('./components/views/sms/inbox.vue')
     },
 
 ];
+ const router = new Router({
+     routes:routes
+ });
+ export default routes;
