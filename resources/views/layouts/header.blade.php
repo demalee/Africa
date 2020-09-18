@@ -24,54 +24,54 @@
                                                                        class="menu-title">Inbox</span></a>
                         </li>
 
-                        <li class="has-sub"><a href="{{url('sms/outbox')}}" class="menu-item">Bulk SMS</a>
+                        <li class="has-sub"><a href="{{url('coming-soon')}}" class="menu-item">Bulk SMS</a>
                             <ul class="menu-content">
-                                <li><a href="{{url('sms/outbox')}}" class="menu-item">Outbox</a>
+                                <li><a href="{{url('coming-soon')}}" class="menu-item">Outbox</a>
                                 </li>
-                                <li><a href="{{url('sms/outbox')}}" class="menu-item">Analytics</a>
+                                <li><a href="{{url('coming-soon')}}" class="menu-item">Analytics</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="has-sub"><a href="{{url('sms/outbox')}}" class="menu-item">Premium SMS</a>
+                        <li class="has-sub"><a href="{{url('coming-soon')}}" class="menu-item">Premium SMS</a>
                             <ul class="menu-content">
-                                <li><a href="{{url('sms/outbox')}}" class="menu-item">Outbox</a>
+                                <li><a href="{{url('coming-soon')}}" class="menu-item">Outbox</a>
                                 </li>
 
-                                <li><a href="{{url('sms/outbox')}}" class="menu-item">Suscription Products</a>
+                                <li><a href="{{url('coming-soon')}}" class="menu-item">Suscription Products</a>
                                 </li>
-                                <li><a href="{{url('sms/outbox')}}" class="menu-item">Create Subscription</a>
+                                <li><a href="{{url('coming-soon')}}" class="menu-item">Create Subscription</a>
                                 </li>
-                                <li><a href="{{url('sms/outbox')}}" class="menu-item">Analytics</a>
+                                <li><a href="{{url('coming-soon')}}" class="menu-item">Analytics</a>
                                 </li>
 
                             </ul>
                         </li>
                         <li class="has-sub"><a href="#" class="menu-item">Short codes</a>
                             <ul class="menu-content">
-                                <li><a href="{{url('sms/outbox')}}" class="menu-item">My short codes</a>
+                                <li><a href="{{url('coming-soon')}}" class="menu-item">My short codes</a>
                                 </li>
-                                <li><a href="{{url('sms/outbox')}}" class="menu-item">Create Shortcodes</a>
+                                <li><a href="{{url('coming-soon')}}" class="menu-item">Create Shortcodes</a>
                                 </li>
 
                             </ul>
                         </li>
                         <li class="has-sub"><a href="#" class="menu-item">Alphanumerics</a>
                             <ul class="menu-content">
-                                <li><a href="{{url('sms/outbox')}}" class="menu-item">My Alphanumeric</a>
+                                <li><a href="{{url('coming-soon')}}" class="menu-item">My Alphanumeric</a>
                                 </li>
-                                <li><a href="{{url('sms/outbox')}}" class="menu-item">Create Alphanumeric</a>
+                                <li><a href="{{url('coming-soon')}}" class="menu-item">Create Alphanumeric</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="has-sub"><a href="#" class="menu-item">Send  URLs</a>
                             <ul class="menu-content">
-                                <li><a href="{{url('sms/outbox')}}" class="menu-item">Delivery Reports</a>
+                                <li><a href="{{url('coming-soon')}}" class="menu-item">Delivery Reports</a>
                                 </li>
-                                <li><a href="{{url('sms/outbox')}}" class="menu-item">Incoming Messages</a>
+                                <li><a href="{{url('coming-soon')}}" class="menu-item">Incoming Messages</a>
                                 </li>
-                                <li><a href="{{url('sms/outbox')}}" class="menu-item">Bulk SMS Opt Out</a>
+                                <li><a href="{{url('coming-soon')}}" class="menu-item">Bulk SMS Opt Out</a>
                                 </li>
-                                <li><a href="{{url('sms/outbox')}}" class="menu-item">Subscription Notifications</a>
+                                <li><a href="{{url('coming-soon')}}" class="menu-item">Subscription Notifications</a>
                                 </li>
                             </ul>
                         </li>
@@ -82,17 +82,17 @@
                                                                                               class="menu-title">Voice</span></a>
                     <ul class="menu-content">
 
-                        <li><a href="{{url('sms/outbox')}}"><i class="icon-hme"></i><span data-i18n=""
+                        <li><a href="{{url('coming-soon')}}"><i class="icon-hme"></i><span data-i18n=""
                                                                      class="menu-title">Phone number</span></a>
                         </li>
 
-                        <li><a href="{{url('sms/outbox')}}"><i class="icon-ome"></i><span data-i18n=""
+                        <li><a href="{{url('coming-soon')}}"><i class="icon-ome"></i><span data-i18n=""
                                                                      class="menu-title">create number</span></a>
                         </li>
-                        <li><a href="{{url('sms/outbox')}}"><i class="icon-hme"></i><span data-i18n=""
+                        <li><a href="{{url('coming-soon')}}"><i class="icon-hme"></i><span data-i18n=""
                                                                      class="menu-title">Sessions</span></a>
                         </li>
-                        <li><a href="{{url('sms/outbox')}}"><i class="icon-hoe"></i><span data-i18n=""
+                        <li><a href="{{url('coming-soon')}}"><i class="icon-hoe"></i><span data-i18n=""
                                                                      class="menu-title">Analytics</span></a>
                         </li>
                     </ul>
@@ -102,38 +102,38 @@
                                                                                           class="menu-title">USSD</span></a>
                     <ul class="menu-content">
 
-                        <li><a href="{{url('sms/outbox')}}"><i class="icon-hme"></i><span data-i18n=""
+                        <li><a href="{{url('coming-soon')}}"><i class="icon-hme"></i><span data-i18n=""
                                                                      class="menu-title">Service Codes</span></a>
                         </li>
 
-                        <li><a href="{{url('sms/outbox')}}"><i class="icon-ome"></i><span data-i18n=""
+                        <li><a href="{{url('coming-soon')}}"><i class="icon-ome"></i><span data-i18n=""
                                                                      class="menu-title">create Channel</span></a>
                         </li>
-                        <li><a href="{{url('sms/outbox')}}"><i class="icon-hme"></i><span data-i18n=""
+                        <li><a href="{{url('coming-soon')}}"><i class="icon-hme"></i><span data-i18n=""
                                                                      class="menu-title">Sessions</span></a>
                         </li>
-                        <li><a href="{{url('sms/outbox')}}"><i class="icon-hoe"></i><span data-i18n=""
+                        <li><a href="{{url('coming-soon')}}"><i class="icon-hoe"></i><span data-i18n=""
                                                                      class="menu-title">Analytics</span></a>
                         </li>
                     </ul>
                 </li>
-                <li class="has-sub nav-item"><a href="{{url('sms/outbox')}}"><i class="icon-credit-card"></i><span data-i18n=""
+                <li class="has-sub nav-item"><a href="{{url('coming-soon')}}"><i class="icon-credit-card"></i><span data-i18n=""
 
                                                                                                class="menu-title">Airtime</span></a>
                     <ul class="menu-content">
 
-                        <li><a href="{{url('sms/outbox')}}"><i class="icon-hme"></i><span data-i18n=""
+                        <li><a href="{{url('coming-soon')}}"><i class="icon-hme"></i><span data-i18n=""
                                                                      class="menu-title">Transaction</span></a>
                         </li>
 
-                        <li><a href="{{url('sms/outbox')}}"><i class="icon-ome"></i><span data-i18n=""
+                        <li><a href="{{url('coming-soon')}}"><i class="icon-ome"></i><span data-i18n=""
                                                                      class="menu-title">Analytics</span></a>
                         </li>
                         <li class="has-sub"><a href="#" class="menu-item">Artime Callback </a>
                             <ul class="menu-content">
-                                <li><a href="{{url('sms/outbox')}}" class="menu-item">Status Callback URL</a>
+                                <li><a href="{{url('coming-soon')}}" class="menu-item">Status Callback URL</a>
                                 </li>
-                                <li><a href="{{url('sms/outbox')}}" class="menu-item">Validation Callback URL</a>
+                                <li><a href="{{url('coming-soon')}}" class="menu-item">Validation Callback URL</a>
                                 </li>
                             </ul>
                         </li>
@@ -144,17 +144,17 @@
                                                                                           class="menu-title">Payments</span></a>
                     <ul class="menu-content">
 
-                        <li><a href="{{url('sms/outbox')}}"><i class="icon-hme"></i><span data-i18n=""
+                        <li><a href="{{url('coming-soon')}}"><i class="icon-hme"></i><span data-i18n=""
                                                                      class="menu-title">products</span></a>
                         </li>
 
-                        <li><a href="{{url('sms/outbox')}}"><i class="icon-ome"></i><span data-i18n=""
+                        <li><a href="{{url('coming-soon')}}"><i class="icon-ome"></i><span data-i18n=""
                                                                      class="menu-title">Create Product</span></a>
                         </li>
-                        <li><a href="{{url('sms/outbox')}}"><i class="icon-ome"></i><span data-i18n=""
+                        <li><a href="{{url('coming-soon')}}"><i class="icon-ome"></i><span data-i18n=""
                                                                      class="menu-title">Topup wallet</span></a>
                         </li>
-                        <li><a href="{{url('sms/outbox')}}"><i class="icon-ome"></i><span data-i18n=""
+                        <li><a href="{{url('coming-soon')}}"><i class="icon-ome"></i><span data-i18n=""
                                                                      class="menu-title">Wallet</span></a>
                         </li>
 
@@ -164,11 +164,11 @@
 
                                                                                             class="menu-title">Settings</span></a>
                     <ul class="menu-content">
-                        <li><a href="{{url('sms/outbox')}}"><i class="icon-hme"></i><span data-i18n=""
+                        <li><a href="{{url('coming-soon')}}"><i class="icon-hme"></i><span data-i18n=""
                                                                      class="menu-title">products</span></a>
                         </li>
 
-                        <li><a href="{{url('sms/outbox')}}"><i class="icon-ome"></i><span data-i18n=""
+                        <li><a href="{{url('coming-soon')}}"><i class="icon-ome"></i><span data-i18n=""
                                                                      class="menu-title">API Key</span></a>
                         </li>
 

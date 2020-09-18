@@ -23,6 +23,9 @@ Route::get('sms/inbox', function () {
 Route::get('sms/outbox', function () {
     return view('sms/outbox');
 });
+Route::get('coming-soon', function () {
+    return view('coming-soon');
+});
 Route::get('sms/analytics', function () {
     return view('sms/analytics');
 });
