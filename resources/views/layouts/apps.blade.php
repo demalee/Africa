@@ -30,7 +30,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('../app-assets/vendors/css/prism.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ asset('../app-assets/vendors/css/chartist.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ asset('../app-assets/css/app.css')}}">
-    <link rel="stylesheet" href="'{{ asset('ecobba/assets/css/app.min.css')}}">
+{{--    <link rel="stylesheet" href="'{{ asset('ecobba/assets/css/app.min.css')}}">--}}
     <!-- Template CSS -->
 
     <!-- Custom style CSS -->
@@ -39,14 +39,14 @@
     {{--    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />--}}
 
 
-    <!---Fontawesome css-->
-    <link href="{{ asset('/assets/plugins/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
+{{--    <!---Fontawesome css-->--}}
+{{--    <link href="{{ asset('/assets/plugins/fontawesome-free/css/all.min.css')}}" rel="stylesheet">--}}
 
-    <!---Ionicons css-->
-    <link href="{{ asset('/assets/plugins/ionicons/css/ionicons.min.css')}}" rel="stylesheet">
+{{--    <!---Ionicons css-->--}}
+{{--    <link href="{{ asset('/assets/plugins/ionicons/css/ionicons.min.css')}}" rel="stylesheet">--}}
 
-    <!---Typicons css-->
-    <link href="{{ asset('/assets/plugins/typicons.font/typicons.css')}}" rel="stylesheet">
+{{--    <!---Typicons css-->--}}
+{{--    <link href="{{ asset('/assets/plugins/typicons.font/typicons.css')}}" rel="stylesheet">--}}
 
     <!---Feather css-->
 
@@ -90,7 +90,7 @@
 <script src="{{ asset('../app-assets/vendors/js/pace/pace.min.js')}}"></script>
 <!-- BEGIN VENDOR JS-->
 <!-- BEGIN PAGE VENDOR JS-->
-<script src="{{ asset('../app-assets/vendors/js/chartist.min.js')}}"></script>
+{{--<script src="{{ asset('../app-assets/vendors/js/chartist.min.js')}}"></script>--}}
 <!-- END PAGE VENDOR JS-->
 <!-- BEGIN CONVEX JS-->
 <script src="{{ asset('../app-assets/js/app-sidebar.js')}}"></script>

@@ -1,6 +1,6 @@
 <div data-active-color="black" data-background-color="white" data-image="" class="app-sidebar">
     <div class="sidebar-header">
-        <div class="logo clearfix"><a href="index.html" class="logo-text float-left">
+        <div class="logo clearfix"><a href="{{url('/')}}" class="logo-text float-left">
                 <div class="logo-img"><img src="../app-assets/img/logo-dark.png" alt="Convex Logo"/></div>
                 <span class="text align-middle">AFRICA</span></a><a id="sidebarToggle" href="javascript:;"
                                                                     class="nav-toggle d-none d-sm-none d-md-none d-lg-block"><i
@@ -11,7 +11,7 @@
     <div class="sidebar-content">
         <div class="nav-container">
             <ul id="main-menu-navigation" data-menu="menu-navigation" class="navigation navigation-main">
-                <li class=" nav-item"><a href="{{url('/')}}"><i class="icon-home"></i><span data-i18n=""
+                <li class=""><a href="{{url('/')}}"><i class="icon-home"></i><span data-i18n=""
                                                                                           class="menu-title">Dashboard</span></a>
                 </li>
 
@@ -20,19 +20,21 @@
                                                                                                      class="menu-title">SMS</span></a>
                     <ul class="menu-content">
 
-                        <li><a href="{{url('sms/inbox')}}"><i class=""></i><span data-i18n=""
+                        <li class="nav-item"><a href="{{url('sms/inbox')}}" ><i class=""></i><span
                                                                        class="menu-title">Inbox</span></a>
                         </li>
 
-                        <li class="has-sub"><a href="{{url('coming-soon')}}" class="menu-item">Bulk SMS</a>
+                        <li class="has-sub"><a href="#" class="menu-item">Bulk SMS</a>
                             <ul class="menu-content">
+                                <li><a href="#" class="menu-item">Horizontal Forms</a>
+                                </li>
                                 <li><a href="{{url('coming-soon')}}" class="menu-item">Outbox</a>
                                 </li>
                                 <li><a href="{{url('coming-soon')}}" class="menu-item">Analytics</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="has-sub"><a href="{{url('coming-soon')}}" class="menu-item">Premium SMS</a>
+                        <li class="has-sub"><a href="#" class="menu-item">Premium SMS</a>
                             <ul class="menu-content">
                                 <li><a href="{{url('coming-soon')}}" class="menu-item">Outbox</a>
                                 </li>
@@ -117,9 +119,9 @@
                         </li>
                     </ul>
                 </li>
-                <li class="has-sub nav-item"><a href="{{url('coming-soon')}}"><i class="icon-credit-card"></i><span data-i18n=""
+                <li class="has-sub nav-item"><a href="#"><i class="icon-credit-card"></i><span data-i18n=""
 
-                                                                                               class="menu-title">Airtime</span></a>
+                                                                                                     class="menu-title">Airtime</span></a>
                     <ul class="menu-content">
 
                         <li><a href="{{url('coming-soon')}}"><i class="icon-hme"></i><span data-i18n=""

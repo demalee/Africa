@@ -19,6 +19,7 @@
       <list>
         <option value="JavaScript File" />
         <option value="Vue Single File Component" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -143,6 +144,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../template/convex-bootstrap-admin-dashboard-template" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -165,7 +167,7 @@
       <option name="presentableId" value="Default" />
       <updated>1600280200432</updated>
       <workItem from="1600280201757" duration="7186000" />
-      <workItem from="1600291903714" duration="44811000" />
+      <workItem from="1600291903714" duration="49949000" />
     </task>
     <servers />
   </component>
@@ -177,10 +179,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1600319876245" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1600416820611">
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1600421518648">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1600416820611" />
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1600421518648" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1600417183015">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -198,6 +200,11 @@
           <url>file://$PROJECT_DIR$/resources/views/layouts/header.blade.php</url>
           <line>17</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/layouts/apps.blade.php</url>
+          <line>82</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/resources/js/components/apps/app.vue</url>
