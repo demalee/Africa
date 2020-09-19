@@ -26,8 +26,7 @@
 
                         <li class="has-sub"><a href="#" class="menu-item">Bulk SMS</a>
                             <ul class="menu-content">
-                                <li><a href="#" class="menu-item">Horizontal Forms</a>
-                                </li>
+
                                 <li><a href="{{url('coming-soon')}}" class="menu-item">Outbox</a>
                                 </li>
                                 <li><a href="{{url('coming-soon')}}" class="menu-item">Analytics</a>
