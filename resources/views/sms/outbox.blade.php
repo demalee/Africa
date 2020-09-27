@@ -1,50 +1,104 @@
 @extends('layouts.apps')
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 @section('content')
     <section id="coming-soon">
-        <div class="container-fluid">
-            <div class="row full-height-vh">
-                <div class="col-12 d-flex align-items-center justify-content-center gradient-aqua-marine">
-                    <div class="card p-3 box-shadow-2">
-                        <div class="card-header text-center">
-{{--                            <img alt="avtar" class="img-fluid mb-3" src="../app-assets/img/logos/logo-color-big.png" width="80">--}}
-                            <h4 class="text-uppercase text-bold-400 grey darken-1">Coming Soon</h4>
-                        </div>
-                        <div class="card-body">
-                            <div class="text-center">
-                                <h5 class="card-text pb-2">WE ARE LAUNCHING SOON.</h5>
-                                <div id="clockFlat" class="card-text getting-started pt-1 mt-2 display-inline-block white">
-                                    <div class="clockCard px-3 py-3 mr-3 mb-3 bg-danger bg-darken-5 white box-shadow-2"> <span> </span> <br>
-                                        <p class="lead mt-2 mb-0">2  Weeks </p>
-                                    </div>
-                                    <div class="clockCard px-3 py-3 mr-3 mb-3 bg-danger bg-darken-5 white box-shadow-2"> <span> </span> <br>
-                                        <p class="lead mt-2 mb-0"> Days </p>
-                                    </div>
-                                    <div class="clockCard px-3 py-3 mr-3 mb-3 bg-danger bg-darken-5 white box-shadow-2"> <span> </span> <br>
-                                        <p class="lead mt-2 mb-0"> Hours </p>
-                                    </div>
-                                    <div class="clockCard px-2 py-3 mr-3 mb-3 bg-danger bg-darken-5 white box-shadow-2"> <span> </span> <br>
-                                        <p class="lead mt-2 mb-0"> Minutes </p>
-                                    </div>
-                                    <div class="clockCard px-2 py-3 mr-3 mb-3 bg-danger bg-darken-5 white box-shadow-2"> <span> </span> <br>
-                                        <p class="lead mt-2 mb-0"> Seconds </p>
-                                    </div>
+        <div class="container-fluid"><!-- Basic form layout section start -->
+            <section id="basic-form-layouts">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <center><h2 class="content-header"></h2></center>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title-wrap bar-success">
+                                    <h4 class="card-title" id="basic-layout-form">Send Bulk Sms</h4>
                                 </div>
-                                <div class="col-12 pt-1">
-                                    <p class="card-text lead"></p>
-                                </div>
-                                <div class="col-12 text-center pt-2">
-                                    <p class="socialIcon card-text">
-                                        <a class="grey darken-1"><i class="fa fa-facebook-square"></i></a>
-                                        <a class="grey darken-1"><i class="fa fa-twitter-square"></i></a>
-                                        <a class="grey darken-1"><i class="fa fa-google-plus-square"></i></a>
-                                        <a class="grey darken-1"><i class="fa fa-linkedin-square"></i></a>
-                                    </p>
+{{--                                <p class="mb-0">This is the most basic and cost estimation form is the default position.</p>--}}
+                            </div>
+                            <div class="card-body">
+                                <div class="px-3">
+                                    <form action="#" >
+{{--                                        {{ csrf_field() }}--}}
+                                        <div class="form-body">
+                                            <h4 class="form-section">
+
+
+
+
+
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="projectinput1">Subject</label>
+                                                        <input type="text" id="projectinput1" class="form-control" name="subject">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+{{--                                            <br style="clear:both">--}}
+                                            <div class="form-group ">
+                                            <label  id="messageLabel" for="message">Message Brief</label>
+                                                <textarea  rows="5" type="textarea" id="message" class="form-control input-sm " name="message" placeholder="Message" maxlength="140"></textarea>
+
+
+                                                <span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="form-actions">
+                                            <button type="button" class="btn btn-danger mr-1">
+                                                <i class="icon-trash"></i> Cancel
+                                            </button>
+                                            <button type="submit"class="btn btn-success"  id="btnSubmit"  >
+                                                <i class="icon-note"></i> Send Message
+                                            </button>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
-            </div>
+
+
+
+            </section>
+            <!-- // Basic form layout section end -->
         </div>
     </section>
+    <script>
+        $(document).ready(function(){
+            $('#characterLeft').text('Input a maximum of 160 characters');
+            $('#message').keyup(function () {
+                var max = 140;
+                var len = $(this).val().length;
+                if (len >= max) {
+                    $('#characterLeft').text('You have reached the limit');
+                    $('#characterLeft').addClass('red');
+                    $('#btnSubmit').addClass('disabled');
+                }
+                else {
+                    var ch = max - len;
+                    $('#characterLeft').text(ch + ' characters left');
+                    $('#btnSubmit').removeClass('disabled');
+                    $('#characterLeft').removeClass('red');
+                }
+            });
+        });
+
+    </script>
+    <style>
+        .red{
+            color:red;
+        }
+    </style>
 @endsection
