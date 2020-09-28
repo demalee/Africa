@@ -63,12 +63,12 @@
                         </div>
                         <div class="card-footer grey darken-1">
                             <div class="text-center mb-1">  {{ __('Forgot Your Password?') }} @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                                    <a  href="{{ route('password.request') }}">
 
 
                                   <b>Reset</b> <a> @endif</div>
                             <div class="text-center">Don't have an account?
-                                <a class="btn btn-link" href=" {{ route('register') }}"><b>Signup</b></a></div>
+                                <a href=" {{ route('register') }}"><b>Signup</b></a></div>
                         </div>
                     </div>
                 </div>
