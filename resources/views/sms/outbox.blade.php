@@ -28,19 +28,24 @@
                                         <div class="form-body">
                                             <h4 class="form-section">
 
-
-
-
-
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label for="projectinput1">Subject</label>
-                                                        <input type="text" id="projectinput1" class="form-control" name="subject">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label for="projectinput1">Create Short code</label>
+                                                            <input type="text" id="code" class="form-control" name="code" placeholder="12345">
+                                                        </div>
                                                     </div>
+
                                                 </div>
 
-                                            </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="donationinput3">Phone number</label>
+                                                    <input type="tel" id="msisdn" class="form-control square" name="msisdn">
+                                                </div>
+                                                    </div></div>
+
 
 {{--                                            <br style="clear:both">--}}
                                             <div class="form-group ">
@@ -51,7 +56,31 @@
                                                 <span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>
 
                                             </div>
-                                        </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="timesheetinput5">Scheduled date</label>
+                                                            <div class="position-relative has-icon-left">
+                                                                <input type="date" id="scheduledate" class="form-control" name="scheduledate">
+                                                                <div class="form-control-position">
+                                                                    <i class="ft-clock"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="timesheetinput6">scheduled time</label>
+                                                            <div class="position-relative has-icon-left">
+                                                                <input type="time" id="timesheetinput6" class="form-control" name="endtime">
+                                                                <div class="form-control-position">
+                                                                    <i class="ft-clock"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
 
                                         <div class="form-actions">
                                             <button type="button" class="btn btn-danger mr-1">
@@ -60,6 +89,8 @@
                                             <button type="submit"class="btn btn-success"  id="btnSubmit"  >
                                                 <i class="icon-note"></i> Send Message
                                             </button>
+                                        </div>
+                                            </h4>
                                         </div>
                                     </form>
                                 </div>

@@ -62,7 +62,7 @@ body {
   line-height : 1.5;
   color : #212529;
   text-align : left;
-  background-color : #F4F5FA;
+  background-color : #FFFFFF;
 }
 
 [tabindex='-1']:focus {
@@ -447,7 +447,7 @@ mark, .mark {
 
 .img-thumbnail {
   padding : 0.25rem;
-  background-color : #F4F5FA;
+  background-color : #FFFFFF;
   border : 1px solid #DEE2E6;
   border-radius : 0.25rem;
   max-width : 100%;
@@ -1924,7 +1924,7 @@ pre code {
   border-top : 2px solid #DEE2E6;
 }
 .table .table {
-  background-color : #F4F5FA;
+  background-color : #FFFFFF;
 }
 
 .table-sm th, .table-sm td {
@@ -2064,7 +2064,7 @@ pre code {
 }
 
 .table .thead-dark th {
-  color : #F4F5FA;
+  color : #FFFFFF;
   background-color : #212529;
   border-color : #32383E;
 }
@@ -2076,7 +2076,7 @@ pre code {
 }
 
 .table-dark {
-  color : #F4F5FA;
+  color : #FFFFFF;
   background-color : #212529;
 }
 .table-dark th, .table-dark td, .table-dark thead th {
@@ -2444,8 +2444,8 @@ textarea.form-control {
 }
 
 .was-validated .custom-control-input:valid:focus ~ .custom-control-label::before, .custom-control-input.is-valid:focus ~ .custom-control-label::before {
-  -webkit-box-shadow : 0 0 0 1px #F4F5FA, 0 0 0 0.2rem rgba(40, 208, 148, 0.25);
-          box-shadow : 0 0 0 1px #F4F5FA, 0 0 0 0.2rem rgba(40, 208, 148, 0.25);
+  -webkit-box-shadow : 0 0 0 1px #FFFFFF, 0 0 0 0.2rem rgba(40, 208, 148, 0.25);
+          box-shadow : 0 0 0 1px #FFFFFF, 0 0 0 0.2rem rgba(40, 208, 148, 0.25);
 }
 
 .was-validated .custom-file-input:valid ~ .custom-file-label, .custom-file-input.is-valid ~ .custom-file-label {
@@ -2531,8 +2531,8 @@ textarea.form-control {
 }
 
 .was-validated .custom-control-input:invalid:focus ~ .custom-control-label::before, .custom-control-input.is-invalid:focus ~ .custom-control-label::before {
-  -webkit-box-shadow : 0 0 0 1px #F4F5FA, 0 0 0 0.2rem rgba(255, 73, 97, 0.25);
-          box-shadow : 0 0 0 1px #F4F5FA, 0 0 0 0.2rem rgba(255, 73, 97, 0.25);
+  -webkit-box-shadow : 0 0 0 1px #FFFFFF, 0 0 0 0.2rem rgba(255, 73, 97, 0.25);
+          box-shadow : 0 0 0 1px #FFFFFF, 0 0 0 0.2rem rgba(255, 73, 97, 0.25);
 }
 
 .was-validated .custom-file-input:invalid ~ .custom-file-label, .custom-file-input.is-invalid ~ .custom-file-label {
@@ -3824,8 +3824,8 @@ input[type='submit'].btn-block, input[type='reset'].btn-block, input[type='butto
   background-color : #666EE8;
 }
 .custom-control-input:focus ~ .custom-control-label::before {
-  -webkit-box-shadow : 0 0 0 1px #F4F5FA, 0 0 0 0.2rem rgba(102, 110, 232, 0.25);
-          box-shadow : 0 0 0 1px #F4F5FA, 0 0 0 0.2rem rgba(102, 110, 232, 0.25);
+  -webkit-box-shadow : 0 0 0 1px #FFFFFF, 0 0 0 0.2rem rgba(102, 110, 232, 0.25);
+          box-shadow : 0 0 0 1px #FFFFFF, 0 0 0 0.2rem rgba(102, 110, 232, 0.25);
 }
 .custom-control-input:active ~ .custom-control-label::before {
   color : #FFFFFF;
@@ -4055,14 +4055,14 @@ input[type='submit'].btn-block, input[type='reset'].btn-block, input[type='butto
   outline : none;
 }
 .custom-range:focus::-webkit-slider-thumb {
-  -webkit-box-shadow : 0 0 0 1px #F4F5FA, 0 0 0 0.2rem rgba(102, 110, 232, 0.25);
-          box-shadow : 0 0 0 1px #F4F5FA, 0 0 0 0.2rem rgba(102, 110, 232, 0.25);
+  -webkit-box-shadow : 0 0 0 1px #FFFFFF, 0 0 0 0.2rem rgba(102, 110, 232, 0.25);
+          box-shadow : 0 0 0 1px #FFFFFF, 0 0 0 0.2rem rgba(102, 110, 232, 0.25);
 }
 .custom-range:focus::-moz-range-thumb {
-  box-shadow : 0 0 0 1px #F4F5FA, 0 0 0 0.2rem rgba(102, 110, 232, 0.25);
+  box-shadow : 0 0 0 1px #FFFFFF, 0 0 0 0.2rem rgba(102, 110, 232, 0.25);
 }
 .custom-range:focus::-ms-thumb {
-  box-shadow : 0 0 0 1px #F4F5FA, 0 0 0 0.2rem rgba(102, 110, 232, 0.25);
+  box-shadow : 0 0 0 1px #FFFFFF, 0 0 0 0.2rem rgba(102, 110, 232, 0.25);
 }
 .custom-range::-moz-focus-outer {
   border : 0;
@@ -4248,8 +4248,8 @@ input[type='submit'].btn-block, input[type='reset'].btn-block, input[type='butto
 }
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
   color : #495057;
-  background-color : #F4F5FA;
-  border-color : #DEE2E6 #DEE2E6 #F4F5FA;
+  background-color : #FFFFFF;
+  border-color : #DEE2E6 #DEE2E6 #FFFFFF;
 }
 .nav-tabs .dropdown-menu {
   margin-top : -1px;
@@ -39882,7 +39882,7 @@ body {
   font-family : 'Lato', sans-serif;
   font-weight : 100;
   line-height : 1.5em;
-  color : rgba(97, 97, 97, 0.87);
+  color : white;
   min-height : 100vh;
 }
 body.inverse {
@@ -40327,7 +40327,7 @@ form .form-actions {
   margin-top : 20px;
 }
 form .form-actions.filled {
-  background-color : #F4F5FA;
+  background-color : #FFFFFF;
 }
 form .form-actions.center {
   text-align : center;
@@ -40396,7 +40396,7 @@ form.striped-rows .form-group > div {
   padding-right : 0;
 }
 form.striped-rows .form-group:nth-child(even) {
-  background-color : #F4F5FA;
+  background-color : #FFFFFF;
 }
 
 form.striped-labels .form-group {
@@ -40411,7 +40411,7 @@ form.striped-labels .form-group > div {
   background-color : white;
 }
 form.striped-labels .form-group:nth-child(even) {
-  background-color : #F4F5FA;
+  background-color : #FFFFFF;
 }
 
 select.form-control {
@@ -41103,7 +41103,7 @@ body.chat-page .main-panel {
   float : left;
   margin : 0 0 10px 20px;
   color : #000000;
-  background-color : #F4F5FA;
+  background-color : #FFFFFF;
 }
 .chat-application .chats .chat-left .chat-content + .chat-content:before {
   border-color : transparent;
@@ -50824,7 +50824,7 @@ ul.no-list-style {
 .dropzone {
   min-height : 350px;
   border : 2px dashed #666EE8;
-  background : #F4F5FA;
+  background : #FFFFFF;
 }
 .dropzone .dz-message {
   font-size : 2rem;

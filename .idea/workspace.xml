@@ -167,7 +167,7 @@
       <option name="presentableId" value="Default" />
       <updated>1600280200432</updated>
       <workItem from="1600280201757" duration="7186000" />
-      <workItem from="1600291903714" duration="64070000" />
+      <workItem from="1600291903714" duration="66435000" />
     </task>
     <servers />
   </component>
@@ -183,14 +183,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1600319876245" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1600421518648">
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1601295390115">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1600421518648" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1600417183015">
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1601295390115" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1601295709914">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1600417183015" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1601295709914" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
