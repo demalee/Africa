@@ -12,14 +12,14 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::middleware(['auth'])->group(function () {
 Route::get('/', function () {
     return view('welcome');
-});
-
+});});
+Route::middleware(['auth'])->group(function () {
 Route::get('sms/inbox', function () {
     return view('sms/inbox');
-});
+});});
 //middleware
 Route::middleware(['auth'])->group(function () {
 Route::get('sms/outbox', function () {
