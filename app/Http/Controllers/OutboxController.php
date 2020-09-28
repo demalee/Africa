@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use AfricasTalking\SDK\AfricasTalking;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use Ixudra\Curl\Facades\Curl;
 
 class OutboxController extends Controller
 {
@@ -17,6 +18,57 @@ class OutboxController extends Controller
     {
         //
     }
+
+    public function postBulk(Request $request){
+        $url = "/sms/sendExpressBulk";
+        $auth = false;
+        $token = null;
+        $data = $request->all();
+
+        
+        $body = [
+            "msisdn" => $data['msisdn'],
+            "message" => $data['message'],
+            "sender_id" => $data['code'],
+            // "msisdn" => $data['msisdn'],
+        ];
+
+
+        $result = $this->postRequest($auth,$token,$url,$body);
+        if( @$result->status == 200 ) {
+            Session::flash('success', 'Message sent successfully');
+            return redirect()->back();
+        } else {
+            return redirect()->back()->with('errors',@$result->response);
+        }
+
+    }
+
+
+    public function postrequest($auth,$token,$url,$body){
+        if($auth == false) {
+            $response = Curl::to(env('BASE_URL').$url)
+                ->withHeader('Content-Type: application/json')
+               // ->withHeader('Authorization: Bearer ' . $token)
+                ->withResponseHeaders()
+                ->returnResponseObject()
+                ->withData($body)
+                ->asJson()
+                ->post();
+        }else{
+            $response = Curl::to(env('BASE_URL').$url)
+                ->withHeader('Content-Type: application/json')
+                ->withHeader('Authorization: Bearer ' . $token)
+                ->withResponseHeaders()
+                ->returnResponseObject()
+                ->withData($body)
+                ->asJson()
+                ->post();
+        }
+        return $response->content;
+    }
+
+
 
     public function SendAllMembers(Request $request)
     {

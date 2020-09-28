@@ -23,7 +23,7 @@
                             </div>
                             <div class="card-body">
                                 <div class="px-3">
-                                    <form action="#" >
+                                    <form method="post" method="post" action="{{(url('post-bulk'))}}">
 {{--                                        {{ csrf_field() }}--}}
                                         <div class="form-body">
                                             <h4 class="form-section">
@@ -31,7 +31,7 @@
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <div class="form-group">
-                                                            <label for="projectinput1">Create Short code</label>
+                                                            <label for="projectinput1">Enter Short code</label>
                                                             <input type="text" id="code" class="form-control" name="code" placeholder="12345">
                                                         </div>
                                                     </div>
@@ -92,7 +92,19 @@
                                         </div>
                                             </h4>
                                         </div>
+
+                                        <div class="user-login-reg__error">
+                                          @if(Session::has('errors'))
+                                          {{Session::get('errors')}}
+                                          @endif
+                                    
+                                        </div>
+
+            
                                     </form>
+
+
+
                                 </div>
                             </div>
                         </div>

@@ -31,6 +31,8 @@ Route::get('sms/outbox', function () {
 
 });
 
+Route::post('post-bulk','App\Http\Controllers\OutboxController@postBulk')->name('postbulk');
+
 Route::post('message-members','OutboxController@SendAllMembers')->name('messagemembers');
 
 Route::get('coming-soon', function () {
