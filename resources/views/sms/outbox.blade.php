@@ -27,6 +27,8 @@
 {{--                                        {{ csrf_field() }}--}}
                                         <div class="form-body">
                                             <h4 class="form-section">
+                                                <input type="hidden" name="sender_id" value="sender_id">
+                                                <input type="hidden" name="sender_id" value="">
 
                                                 <div class="row">
                                                     <div class="col-md-12">
