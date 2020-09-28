@@ -57,28 +57,18 @@
 </head>
 <body data-col="2-columns" class=" 2-columns ">
 
-<section id="login">
-    <div class="container-fluid">
-<div class="wrapper">
-    <div class="main-panel">
-        <div class="main-content">
-            <div class="content-wrapper">
+
+<div class="wrapper"><!--Login Page Starts-->
+
                 <main class="py-4">
                     <!--end menu-->
                     @yield('content')
-                </main></div></div></div>
-    <footer class="footer footer-static footer-light">
+                </main></div>
+    <footer class="footer footer-static footer-lght">
         <p class="clearfix text-muted text-center px-2"><span>Copyright  &copy; 2018 <a
                     href="" id="pixinventLink" target="_blank"
                     class="text-bold-800 primary darken-2">Africa </a>, All rights reserved. </span></p>
     </footer>
-
-</div>
-    </div></section>
-
-
-
-
 
 <!-- BEGIN VENDOR JS-->
 <script src="{{ asset('../app-assets/vendors/js/core/jquery-3.3.1.min.js')}}"></script>
