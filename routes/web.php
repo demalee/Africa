@@ -15,25 +15,45 @@ use Illuminate\Support\Facades\Route;
 Route::middleware(['auth'])->group(function () {
 Route::get('/', function () {
     return view('welcome');
-});});
-Route::middleware(['auth'])->group(function () {
+});
+
 Route::get('sms/inbox', function () {
     return view('sms/inbox');
-});});
-//middleware
-Route::middleware(['auth'])->group(function () {
+});
+
+    Route::get('users/group', function () {
+        return view('users/group');
+    });
+    Route::get('users/bulk-group', function () {
+        return view('users/bulk-group');
+    });
+    Route::get('users/users', function () {
+        return view('users/users');
+    });
+    Route::get('users/report', function () {
+        return view('users/report');
+
+    });  Route::get('users/usercreate', function () {
+        return view('users/usercreate');
+    });
 Route::get('sms/outbox', function () {
 
     return view('sms/outbox');
 
-
 });
+    Route::get('billing/index', function () {
 
+        return view('billing/index');
+
+    });
 });
 
 Route::post('post-bulk','App\Http\Controllers\OutboxController@postBulk')->name('postbulk');
 
-Route::post('message-members','OutboxController@SendAllMembers')->name('messagemembers');
+Route::post('message-members','App\Http\Controllers\OutboxController@SendAllMembers')->name('messagemembers');
+
+
+
 
 Route::get('coming-soon', function () {
     return view('coming-soon');

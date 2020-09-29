@@ -133,6 +133,8 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
       <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/ixudra/curl" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hbWJOZmEuLW9I2ipKz8V2J1OOt" />
@@ -167,7 +169,7 @@
       <option name="presentableId" value="Default" />
       <updated>1600280200432</updated>
       <workItem from="1600280201757" duration="7186000" />
-      <workItem from="1600291903714" duration="72371000" />
+      <workItem from="1600291903714" duration="88673000" />
     </task>
     <servers />
   </component>
@@ -183,14 +185,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1600319876245" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1601295390115">
+    <state x="411" y="87" key="NewPhpClassDialog" timestamp="1601360863580">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1601295390115" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1601299387196">
+    <state x="411" y="87" key="NewPhpClassDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1601360863580" />
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1601360873105">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1601299387196" />
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1601360873105" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1601364718701">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1601364718701" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -209,6 +215,16 @@
           <url>file://$PROJECT_DIR$/resources/views/layouts/apps.blade.php</url>
           <line>82</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/users/usercreate.blade.php</url>
+          <line>92</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/layouts/header.blade.php</url>
+          <line>80</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/resources/js/components/apps/app.vue</url>

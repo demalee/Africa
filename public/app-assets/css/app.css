@@ -39882,7 +39882,7 @@ body {
   font-family : 'Lato', sans-serif;
   font-weight : 100;
   line-height : 1.5em;
-  color : white;
+  color : #F8F9FA;
   min-height : 100vh;
 }
 body.inverse {
@@ -40061,7 +40061,7 @@ button:hover {
 .card .card-header {
   padding : 1.5rem;
   border-bottom : none;
-  background-color : transparent;
+  background-color : #E9ECEF;
 }
 .card .card-header .card-title-wrap {
   margin-left : -1.5rem;

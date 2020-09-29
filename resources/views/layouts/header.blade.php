@@ -78,6 +78,33 @@
                         </li>
                     </ul>
                 </li>
+                <li class="has-sub nav-item"><a href="#"><i class="ft-users"></i><span data-i18n=""
+
+                                                                                                     class="menu-title">User Management</span></a>
+                    <ul class="menu-content">
+
+                        <li class="nav-item"><a href="{{url('users/group')}}" ><i class=""></i><span
+                                    class="menu-title">Groups</span></a>
+                        </li>
+                        <li><a class="nav-item" href="{{url('users/bulk-group')}}" class="menu-item">Send Bulk to groups</a>
+                        </li>
+                        <li><a class="nav-item" href="{{url('users/users')}}" class="menu-item">Users</a>
+                        </li>
+                        <li><a class="nav-item" href="{{url('users/report')}}" class="menu-item">Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-sub nav-item"><a href="#"><i class="icon-wallet"></i><span data-i18n=""
+
+                                                                                       class="menu-title">Billing</span></a>
+                    <ul class="menu-content">
+
+                        <li class="nav-item"><a href="{{url('billing/index')}}" ><i class=""></i><span
+                                    class="menu-title">Billing History</span></a>
+                        </li>
+
+                    </ul>
+                </li>
                 <li class="has-sub nav-item"><a href="#"><i class="icon-microphone"></i><span data-i18n=""
 
                                                                                               class="menu-title">Voice</span></a>
@@ -267,9 +294,9 @@
                                                                   alt="avatar"/></span>
                             <p class="d-none">User Settings</p></a>
                         <div aria-labelledby="dropdownBasic3" class="dropdown-menu dropdown-menu-right">
-                            <div class="arrow_box_right"><a href="user-profile-page.html"
+                            <div class="arrow_box_right"><a href="#"
                                                             class="dropdown-item py-1"><i
-                                        class="ft-edit mr-2"></i><span>My Profile</span></a><a href="chat.html"
+                                        class="ft-edit mr-2"></i><span>My Profile</span></a><a href="#"
                                                                                                class="dropdown-item py-1"><i
                                         class="ft-message-circle mr-2"></i><span>My Chat</span></a><a
                                     href="javascript:;"

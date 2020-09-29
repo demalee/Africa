@@ -7,6 +7,7 @@
         <div class="container-fluid"><!-- Basic form layout section start -->
             <section id="basic-form-layouts">
                 <div class="row">
+                    @include('message/message')
                     <div class="col-sm-12">
                         <center><h2 class="content-header"></h2></center>
                     </div>
@@ -26,7 +27,7 @@
                                     <form method="post" method="post" action="{{(url('post-bulk'))}}">
 {{--                                        {{ csrf_field() }}--}}
                                         <div class="form-body">
-                                            <h4 class="form-section">
+
                                                 <input type="hidden" name="sender_id" value="sender_id">
                                                 <input type="hidden" name="sender_id" value="">
 
@@ -92,17 +93,17 @@
                                                 <i class="icon-note"></i> Send Message
                                             </button>
                                         </div>
-                                            </h4>
+
                                         </div>
 
                                         <div class="user-login-reg__error">
                                           @if(Session::has('errors'))
                                           {{Session::get('errors')}}
                                           @endif
-                                    
+
                                         </div>
 
-            
+
                                     </form>
 
 
