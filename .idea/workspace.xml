@@ -169,7 +169,7 @@
       <option name="presentableId" value="Default" />
       <updated>1600280200432</updated>
       <workItem from="1600280201757" duration="7186000" />
-      <workItem from="1600291903714" duration="97983000" />
+      <workItem from="1600291903714" duration="99631000" />
     </task>
     <servers />
   </component>
@@ -223,7 +223,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/layouts/header.blade.php</url>
-          <line>80</line>
+          <line>78</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">

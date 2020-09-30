@@ -20,62 +20,60 @@
                                                                                                      class="menu-title">SMS</span></a>
                     <ul class="menu-content">
 
-                        <li class="nav-item"><a href="{{url('sms/inbox')}}" ><i class=""></i><span
-                                                                       class="menu-title">Inbox</span></a>
-                        </li>
+
 
                         <li class="has-sub"><a href="#" class="menu-item">Bulk SMS</a>
                             <ul class="menu-content">
 
+                                <li><a href="{{url('sms/bulk-group')}}" class="menu-item">Send Bulk</a>
+                                </li>
+                                <li><a href="{{url('coming-soon')}}" class="menu-item">Send  Express Bulk</a>
+                                </li>
                                 <li><a href="{{url('sms/outbox')}}" class="menu-item">Outbox</a>
                                 </li>
-                                <li><a href="{{url('coming-soon')}}" class="menu-item">Analytics</a>
+                                <li><a href="{{url('sms/outbox')}}" class="menu-item">Send Bulk</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="has-sub"><a href="#" class="menu-item">Premium SMS</a>
                             <ul class="menu-content">
+
+                                <li><a href="{{url('sms/inbox')}}" class="menu-item">Inbox</a>
+                                </li>
                                 <li><a href="{{url('coming-soon')}}" class="menu-item">Outbox</a>
                                 </li>
 
-                                <li><a href="{{url('coming-soon')}}" class="menu-item">Suscription Products</a>
-                                </li>
-                                <li><a href="{{url('coming-soon')}}" class="menu-item">Create Subscription</a>
-                                </li>
-                                <li><a href="{{url('coming-soon')}}" class="menu-item">Analytics</a>
-                                </li>
+                            </ul>
+                        </li>
+{{--                        <li class="has-sub"><a href="#" class="menu-item">Short codes</a>--}}
+{{--                            <ul class="menu-content">--}}
+{{--                                <li><a href="{{url('coming-soon')}}" class="menu-item">My short codes</a>--}}
+{{--                                </li>--}}
+{{--                                <li><a href="{{url('coming-soon')}}" class="menu-item">Create Shortcodes</a>--}}
+{{--                                </li>--}}
 
-                            </ul>
-                        </li>
-                        <li class="has-sub"><a href="#" class="menu-item">Short codes</a>
-                            <ul class="menu-content">
-                                <li><a href="{{url('coming-soon')}}" class="menu-item">My short codes</a>
-                                </li>
-                                <li><a href="{{url('coming-soon')}}" class="menu-item">Create Shortcodes</a>
-                                </li>
-
-                            </ul>
-                        </li>
-                        <li class="has-sub"><a href="#" class="menu-item">Alphanumerics</a>
-                            <ul class="menu-content">
-                                <li><a href="{{url('coming-soon')}}" class="menu-item">My Alphanumeric</a>
-                                </li>
-                                <li><a href="{{url('coming-soon')}}" class="menu-item">Create Alphanumeric</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="has-sub"><a href="#" class="menu-item">Send  URLs</a>
-                            <ul class="menu-content">
-                                <li><a href="{{url('coming-soon')}}" class="menu-item">Delivery Reports</a>
-                                </li>
-                                <li><a href="{{url('coming-soon')}}" class="menu-item">Incoming Messages</a>
-                                </li>
-                                <li><a href="{{url('coming-soon')}}" class="menu-item">Bulk SMS Opt Out</a>
-                                </li>
-                                <li><a href="{{url('coming-soon')}}" class="menu-item">Subscription Notifications</a>
-                                </li>
-                            </ul>
-                        </li>
+{{--                            </ul>--}}
+{{--                        </li>--}}
+{{--                        <li class="has-sub"><a href="#" class="menu-item">Alphanumerics</a>--}}
+{{--                            <ul class="menu-content">--}}
+{{--                                <li><a href="{{url('coming-soon')}}" class="menu-item">My Alphanumeric</a>--}}
+{{--                                </li>--}}
+{{--                                <li><a href="{{url('coming-soon')}}" class="menu-item">Create Alphanumeric</a>--}}
+{{--                                </li>--}}
+{{--                            </ul>--}}
+{{--                        </li>--}}
+{{--                        <li class="has-sub"><a href="#" class="menu-item">Send  URLs</a>--}}
+{{--                            <ul class="menu-content">--}}
+{{--                                <li><a href="{{url('coming-soon')}}" class="menu-item">Delivery Reports</a>--}}
+{{--                                </li>--}}
+{{--                                <li><a href="{{url('coming-soon')}}" class="menu-item">Incoming Messages</a>--}}
+{{--                                </li>--}}
+{{--                                <li><a href="{{url('coming-soon')}}" class="menu-item">Bulk SMS Opt Out</a>--}}
+{{--                                </li>--}}
+{{--                                <li><a href="{{url('coming-soon')}}" class="menu-item">Subscription Notifications</a>--}}
+{{--                                </li>--}}
+{{--                            </ul>--}}
+{{--                        </li>--}}
                     </ul>
                 </li>
                 <li class="has-sub nav-item"><a href="#"><i class="ft-users"></i><span data-i18n=""
@@ -86,12 +84,30 @@
                         <li class="nav-item"><a href="{{url('users/group')}}" ><i class=""></i><span
                                     class="menu-title">Groups</span></a>
                         </li>
-                        <li><a class="nav-item" href="{{url('users/bulk-group')}}" class="menu-item">Send Bulk to groups</a>
+
+                        <li class="nav-item"><a href="{{url('users/group')}}" ><i class=""></i><span
+                                    class="menu-title">Companies</span></a>
                         </li>
+
                         <li><a class="nav-item" href="{{url('users/users')}}" class="menu-item">Users</a>
                         </li>
-                        <li><a class="nav-item" href="{{url('users/report')}}" class="menu-item">Report</a>
+
+
+                    </ul>
+                </li>
+                <li class="has-sub nav-item"><a href="#"><i class="ft-users"></i><span data-i18n=""
+
+                                                                                       class="menu-title">Group Management</span></a>
+                    <ul class="menu-content">
+
+                        <li class="nav-item"><a href="{{url('users/group')}}" ><i class=""></i><span
+                                    class="menu-title">Create group</span></a>
                         </li>
+
+                        <li class="nav-item"><a href="{{url('users/group')}}" ><i class=""></i><span
+                                    class="menu-title">View groups</span></a>
+                        </li>
+
                         <li><a class="nav-item" href="{{url('users/upload-contact')}}" class="menu-item">Upload Contacts</a>
                         </li>
                     </ul>
