@@ -66,9 +66,7 @@ color: black">Report
                                             <td class="text-truncate p-1" style="color: black">
                                               0
                                             </td>
-                                            <td class="text-truncate p-1" style="color: black">
-                                               1
-                                            </td>
+
                                         </tr>
 
                                         </tbody>

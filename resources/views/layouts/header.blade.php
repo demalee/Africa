@@ -92,6 +92,8 @@
                         </li>
                         <li><a class="nav-item" href="{{url('users/report')}}" class="menu-item">Report</a>
                         </li>
+                        <li><a class="nav-item" href="{{url('users/upload-contact')}}" class="menu-item">Upload Contacts</a>
+                        </li>
                     </ul>
                 </li>
                 <li class="has-sub nav-item"><a href="#"><i class="icon-wallet"></i><span data-i18n=""
