@@ -67,7 +67,7 @@ color: black">
 
                                             </td>
                                             <td class="text-truncate p-1" style="color: black">
-                                                Guardo
+                                                Test group
                                             </td>
                                             <td class="text-truncate p-1" style="color: black">
                                                 2 weeks ago

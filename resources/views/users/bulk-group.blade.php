@@ -36,7 +36,7 @@
                                                     <label for="issueinput5">Select short code</label>
                                                     <select id="issueinput5" name="code" class="form-control" data-toggle="tooltip" data-trigger="hover" data-placement="top"
                                                             data-title="Priority">
-                                                        <option value="low">Flook</option>
+                                                        <option value="low">Testing</option>
                                                         <option value="medium">Test</option>
                                                     </select>
                                                 </div>
@@ -83,7 +83,7 @@
                                                     <div class="checkbox">
                                                         <div class="custom-control custom-checkbox m-0">
                                                             <input type="checkbox" class="custom-control-input" id="staffing">
-                                                            <label class="custom-control-label" for="staffing">Flooks</label>
+                                                            <label class="custom-control-label" for="staffing">Testing</label>
                                                         </div>
                                                     </div>
 

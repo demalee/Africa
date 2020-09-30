@@ -46,7 +46,7 @@ color: black">Report
                                                testing
                                             </td>
                                             <td class="text-truncate p-1" style="color: black">
-                                                Flooks
+                                                Test shortcode
                                             </td>
                                             <td class="text-truncate p-1" style="color: black">
                                              157
