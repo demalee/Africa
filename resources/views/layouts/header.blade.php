@@ -25,13 +25,13 @@
                         <li class="has-sub"><a href="#" class="menu-item">Bulk SMS</a>
                             <ul class="menu-content">
 
-                                <li><a href="{{url('sms/bulk-group')}}" class="menu-item">Send Bulk</a>
+                                <li><a href="{{url('users/bulk-group')}}" class="menu-item">Send Bulk</a>
                                 </li>
-                                <li><a href="{{url('coming-soon')}}" class="menu-item">Send  Express Bulk</a>
+                                <li><a href="{{url('sms/outbox')}}" class="menu-item">Send Express Bulk</a>
                                 </li>
                                 <li><a href="{{url('sms/outbox')}}" class="menu-item">Outbox</a>
                                 </li>
-                                <li><a href="{{url('sms/outbox')}}" class="menu-item">Send Bulk</a>
+                                <li><a href="{{url('coming-soon')}}" class="menu-item">Scheduled Bulk</a>
                                 </li>
                             </ul>
                         </li>
@@ -81,9 +81,6 @@
                                                                                                      class="menu-title">User Management</span></a>
                     <ul class="menu-content">
 
-                        <li class="nav-item"><a href="{{url('users/group')}}" ><i class=""></i><span
-                                    class="menu-title">Groups</span></a>
-                        </li>
 
                         <li class="nav-item"><a href="{{url('users/group')}}" ><i class=""></i><span
                                     class="menu-title">Companies</span></a>
