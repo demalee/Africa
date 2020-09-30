@@ -46,6 +46,11 @@ Route::get('sms/outbox', function () {
         return view('billing/index');
 
     });
+    Route::get('users/upload-contact', function () {
+
+        return view('users/upload-contact');
+
+    });
 });
 
 Route::post('post-bulk','App\Http\Controllers\OutboxController@postBulk')->name('postbulk');
