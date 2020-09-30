@@ -3,8 +3,8 @@
     <home>
         <div class="card border-left my-lg-0 border-warning border-3">
             <div class="card-block pt-3">
-                <p>App Name: Sandbox</p>
-                <p>Username: sandbox</p>
+                <p style="color: black">App Name: Sandbox</p>
+                <p  style="color: black">Username: sandbox</p>
 
             </div>
         </div>
