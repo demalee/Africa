@@ -29,9 +29,9 @@
                                 </li>
                                 <li><a href="{{url('sms/outbox')}}" class="menu-item">Send Express Bulk</a>
                                 </li>
-                                <li><a href="{{url('sms/outbox')}}" class="menu-item">Outbox</a>
+                                <li><a href="{{url('sms/outbox-blast')}}" class="menu-item">Outbox</a>
                                 </li>
-                                <li><a href="{{url('coming-soon')}}" class="menu-item">Scheduled Bulk</a>
+                                <li><a href="{{url('sms/scheduled-blast')}}" class="menu-item">Scheduled Bulk</a>
                                 </li>
                             </ul>
                         </li>
@@ -82,7 +82,7 @@
                     <ul class="menu-content">
 
 
-                        <li class="nav-item"><a href="{{url('users/group')}}" ><i class=""></i><span
+                        <li class="nav-item"><a href="{{url('users/companies')}}" ><i class=""></i><span
                                     class="menu-title">Companies</span></a>
                         </li>
 

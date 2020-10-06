@@ -17,46 +17,47 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('sms/inbox', function () {
-    return view('sms/inbox');
-});
-
-    Route::get('users/group', function () {
-        return view('users/group');
-    });
-    Route::get('users/bulk-group', function () {
-        return view('users/bulk-group');
-    });
-    Route::get('users/users', function () {
-        return view('users/users');
-    });
-    Route::get('users/report', function () {
-        return view('users/report');
-
-    });  Route::get('users/usercreate', function () {
-        return view('users/usercreate');
-    });
-Route::get('sms/outbox', function () {
-
-    return view('sms/outbox');
-
-});
-    Route::get('billing/index', function () {
-
-        return view('billing/index');
-
-    });
-    Route::get('users/upload-contact', function () {
-
-        return view('users/upload-contact');
-
-    });
-});
 
 Route::post('post-bulk','App\Http\Controllers\OutboxController@postBulk')->name('postbulk');
 
 Route::post('message-members','App\Http\Controllers\OutboxController@SendAllMembers')->name('messagemembers');
 
+Route::post('post-company','App\Http\Controllers\UserController@postCompany')->name('post-company');
+Route::get('deletecompany/{company_id}','App\Http\Controllers\UserController@deletecompany');
+Route::get('company/company-details/{company_id}','App\Http\Controllers\UserController@companyDetails');
+
+Route::get('users/usercreate','App\Http\Controllers\UserController@createUsers');
+
+Route::get('users/users','App\Http\Controllers\UserController@fetchSystemUsers');
+
+Route::get('sms/outbox-blast','App\Http\Controllers\SmsController@viewSentBulkSMS');
+Route::get('sms/scheduled-blast','App\Http\Controllers\SmsController@viewScheduledBulkSMS');
+
+
+Route::get('users/bulk-group','App\Http\Controllers\SmsController@bulkGroup')->name('bulkGroup');
+Route::get('users/upload-contact','App\Http\Controllers\GroupController@uploadcontacts');
+
+Route::get('users/group','App\Http\Controllers\GroupController@groups')->name('groups');
+Route::get('users/companies','App\Http\Controllers\UserController@companiesList');
+
+Route::get('group/group-contacts/{group_id}','App\Http\Controllers\GroupController@groupcontacts')->name('group-contacts');
+
+Route::get('group/deletegroup/{group_id}','App\Http\Controllers\GroupController@deleteGroupById');
+Route::get('group/deletecontacts_group/{id}/{group_id}','App\Http\Controllers\GroupController@deleteContactFromGroup');
+Route::post('create-group','App\Http\Controllers\GroupController@createGroup')->name('createGroup');
+
+Route::post('create-user','App\Http\Controllers\UserController@postNewUser')->name('postNewUser');
+
+Route::post('postcontacts','App\Http\Controllers\GroupController@postcontacts')->name('postcontacts');
+
+Route::post('post-express-sms','App\Http\Controllers\SmsController@postExpressBulk')->name('postExpressBulk');
+
+Route::post('post-bulk','App\Http\Controllers\SmsController@postBulk')->name('postbulk');
+
+
+Route::post('message-members','App\Http\Controllers\SmsController@SendAllMembers')->name('messagemembers');
+
+});
 
 
 
