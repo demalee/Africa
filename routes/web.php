@@ -20,7 +20,12 @@ Route::get('/', function () {
 Route::get('sms/outbox', function () {
     return view('sms/outbox');
 });
-
+    Route::get('sms/inbox', function () {
+        return view('sms/inbox');
+    });
+    Route::get('users/userdetails', function () {
+        return view('users/userdetails');
+    });
 Route::post('post-bulk','App\Http\Controllers\OutboxController@postBulk')->name('postbulk');
 
 Route::post('message-members','App\Http\Controllers\OutboxController@SendAllMembers')->name('messagemembers');

@@ -45,35 +45,7 @@
 
                             </ul>
                         </li>
-{{--                        <li class="has-sub"><a href="#" class="menu-item">Short codes</a>--}}
-{{--                            <ul class="menu-content">--}}
-{{--                                <li><a href="{{url('coming-soon')}}" class="menu-item">My short codes</a>--}}
-{{--                                </li>--}}
-{{--                                <li><a href="{{url('coming-soon')}}" class="menu-item">Create Shortcodes</a>--}}
-{{--                                </li>--}}
 
-{{--                            </ul>--}}
-{{--                        </li>--}}
-{{--                        <li class="has-sub"><a href="#" class="menu-item">Alphanumerics</a>--}}
-{{--                            <ul class="menu-content">--}}
-{{--                                <li><a href="{{url('coming-soon')}}" class="menu-item">My Alphanumeric</a>--}}
-{{--                                </li>--}}
-{{--                                <li><a href="{{url('coming-soon')}}" class="menu-item">Create Alphanumeric</a>--}}
-{{--                                </li>--}}
-{{--                            </ul>--}}
-{{--                        </li>--}}
-{{--                        <li class="has-sub"><a href="#" class="menu-item">Send  URLs</a>--}}
-{{--                            <ul class="menu-content">--}}
-{{--                                <li><a href="{{url('coming-soon')}}" class="menu-item">Delivery Reports</a>--}}
-{{--                                </li>--}}
-{{--                                <li><a href="{{url('coming-soon')}}" class="menu-item">Incoming Messages</a>--}}
-{{--                                </li>--}}
-{{--                                <li><a href="{{url('coming-soon')}}" class="menu-item">Bulk SMS Opt Out</a>--}}
-{{--                                </li>--}}
-{{--                                <li><a href="{{url('coming-soon')}}" class="menu-item">Subscription Notifications</a>--}}
-{{--                                </li>--}}
-{{--                            </ul>--}}
-{{--                        </li>--}}
                     </ul>
                 </li>
                 <li class="has-sub nav-item"><a href="#"><i class="ft-user"></i><span data-i18n=""
