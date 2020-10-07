@@ -21,6 +21,11 @@ Route::get('sms/outbox', function () {
     return view('sms/outbox');
 });
 
+Route::get('billing/index', function () {
+    return view('billing/index');
+});
+
+
 Route::post('post-bulk','App\Http\Controllers\OutboxController@postBulk')->name('postbulk');
 
 Route::post('message-members','App\Http\Controllers\OutboxController@SendAllMembers')->name('messagemembers');
