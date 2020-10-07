@@ -23,7 +23,9 @@ color: black">
                                             <button type="button" class="btn btn-success mr-1">
                                                 <i class="icon-pencil"></i> <a href="{{url('users/report')}}">Generate report</a>
                                             </button>
-
+                                            <button type="button" class="btn btn-success mr-1">
+                                                <i class="icon-pencil"></i> <a href="{{url('users/userdetails')}}">View User details</a>
+                                            </button>
                                         </div>
 
                                     </div>
@@ -75,8 +77,8 @@ color: black">
 
                                                     </td>
                                                 </tr>
-                                         @endforeach 
-                                               
+                                         @endforeach
+
                                         </tbody>
                                     </table>
                                 </div>

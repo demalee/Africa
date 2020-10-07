@@ -8,8 +8,7 @@
                 <div class="card-header">
                     <div class="card-title-wrap bar-warning">
                         <h4 class="card-title">sms inbox</h4>
-                        <p>This is a log of messages that we have received belonging to you. You can receive messages by requesting a short code or keyword.
-                        </p>
+
                     </div>
                 </div>
                 <div class="card-body">
@@ -18,10 +17,10 @@
                             <table id="recent-orders" class="table table-hover table-xl mb-0">
                                 <thead>
                                 <tr>
-                                    <th class="border-top-0">Date</th>
-                                    <th class="border-top-0">Text</th>
-                                    <th class="border-top-0">From</th>
-                                    <th class="border-top-0">To</th>
+                                    <th class="border-top-0" style="color: black">Date</th>
+                                    <th class="border-top-0" style="color: black">Text</th>
+                                    <th class="border-top-0" style="color: black">From</th>
+                                    <th class="border-top-0" style="color: black">To</th>
 
                                 </tr>
                                 </thead>
