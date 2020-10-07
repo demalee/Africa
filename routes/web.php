@@ -17,6 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('sms/outbox', function () {
+    return view('sms/outbox');
+});
 
 Route::post('post-bulk','App\Http\Controllers\OutboxController@postBulk')->name('postbulk');
 
