@@ -121,7 +121,7 @@
 
                                                     </td>
                                                    <td class="text-truncate p-1">
-                                                       <button type="button" class="btn btn-outline-success btn-block btn-small" data-toggle="modal" data-target="#bootstrap">
+                                                       <button type="button" class="btn btn-sm btn-outline-danger round" data-toggle="modal" data-target="#bootstrap">
                                                       Edit
                                                        </button>
 
