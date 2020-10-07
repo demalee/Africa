@@ -7,9 +7,8 @@
         <div class="container-fluid"><!-- Basic form layout section start -->
             <section id="basic-form-layouts">
                 <div class="row">
-                    @include('message/message')
                     <div class="col-sm-12">
-                        <center><h2 class="content-header"></h2></center>
+                    @include('message/message')
                     </div>
                 </div>
                 <div class="row">
@@ -24,7 +23,7 @@
                             </div>
                             <div class="card-body">
                                 <div class="px-3">
-                                    <form method="post" method="post" action="">
+                                    <form method="post" method="post" action="{{(url('post-bulk'))}}" >
                                                                                 {{ csrf_field() }}
                                         <div class="form-body">
 
@@ -36,10 +35,14 @@
                                                     <label for="issueinput5">Select short code</label>
                                                     <select id="issueinput5" name="code" class="form-control" data-toggle="tooltip" data-trigger="hover" data-placement="top"
                                                             data-title="Priority">
-                                                        <option value="low">Flook</option>
-                                                        <option value="medium">Test</option>
+                                                            <option value="">Select Shortcode</option>
+                                                            @foreach($senders as $sender)
+                                                             <option value="{{ $sender->sender_id }}">{{ $sender->sender_id }}</option>
+                                                            @endforeach
                                                     </select>
+                                                    
                                                 </div>
+
 
 
 
@@ -55,44 +58,42 @@
 
                                             </div>
                                             <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label for="timesheetinput5">Scheduled date</label>
-                                                        <div class="position-relative has-icon-left">
-                                                            <input type="date" id="scheduledate" class="form-control" name="scheduledate">
-                                                            <div class="form-control-position">
-                                                                <i class="ft-clock"></i>
+                                                 <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="timesheetinput5">Scheduled date</label>
+                                                            <div class="position-relative has-icon-left">
+                                                                <input type="date" name="date" id="scheduledate" class="form-control" value={{\Carbon\Carbon::now()->toDateString()}}>
+                                                                <div class="form-control-position">
+                                                                    <i class="ft-clock"></i>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label for="timesheetinput6">scheduled time</label>
-                                                        <div class="position-relative has-icon-left">
-                                                            <input type="time" id="timesheetinput6" class="form-control" name="endtime">
-                                                            <div class="form-control-position">
-                                                                <i class="ft-clock"></i>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="timesheetinput6">scheduled time</label>
+                                                            <div class="position-relative has-icon-left">
+                                                                <input type="time" name="time" id="timesheetinput6" class="form-control" value={{\Carbon\Carbon::now()->toTimeString()}} >
+                                                                <div class="form-control-position">
+                                                                    <i class="ft-clock"></i>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
                                                 <div class="form-group">
                                                     <span style="color: black">Select a group or multiplegroups by checking below</span>
                                                   <br>   <br>
-                                                    <div class="checkbox">
-                                                        <div class="custom-control custom-checkbox m-0">
-                                                            <input type="checkbox" class="custom-control-input" id="staffing">
-                                                            <label class="custom-control-label" for="staffing">Flooks</label>
-                                                        </div>
-                                                    </div>
 
-                                                    <div class="checkbox">
+                                                    @foreach($groups as $group)
+                                                      <div class="checkbox">
                                                         <div class="custom-control custom-checkbox m-0">
-                                                            <input type="checkbox" class="custom-control-input" id="catering">
-                                                            <label class="custom-control-label" for="catering">Test group</label>
+                                                            <input type="checkbox" name="group_id[]" value="{{ $group->id }}" class="custom-control-input" id="staffing{{ $group->id }}">
+                                                            <label class="custom-control-label" for="staffing{{ $group->id }}">{{ $group->group_name }}</label>
                                                         </div>
-                                                    </div>
+                                                      </div>
+                                                    @endforeach
+                                                    
+
                                                 </div>
 
                                             </div>

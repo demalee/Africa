@@ -2,11 +2,14 @@
 @section('content')
     <div class="container-fluid">
 <section id="basic-form-layouts">
-    <div class="row">
+   <div class="row">
         <div class="col-sm-12">
-
+        @include('message/message')
         </div>
     </div>
+
+
+    
     <div class="row">
         <div class="col-md-12">
             <div class="card">
@@ -17,7 +20,7 @@
                 </div>
                 <div class="card-body">
                     <div class="px-3">
-                        <form class="form">
+                         <form action="{{ route('postNewUser') }}" method="post">
                             <div class="form-body">
                                 <h4 class="form-section">
                                     <i class="icon-user"></i> User Details</h4>
@@ -25,13 +28,13 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="projectinput1">First Name</label>
-                                            <input type="text" id="projectinput1" class="form-control" name="fname">
+                                             <input type="text" class="form-control" name="name" placeholder="First Name" value="" id="name">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="projectinput2">Last Name</label>
-                                            <input type="text" id="projectinput2" class="form-control" name="lname">
+                                            <input type="text" class="form-control" name="other_names" placeholder="Last Name" value="" id="other_names"> 
                                         </div>
                                     </div>
                                 </div>
@@ -39,13 +42,13 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="projectinput3">E-mail</label>
-                                            <input type="text" id="projectinput3" class="form-control" name="email">
+                                            <input type="email" class="form-control" name="email" placeholder="Email Address" value="" id="email">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="projectinput4">Contact Number</label>
-                                            <input type="text" id="projectinput4" class="form-control" name="msisdn">
+                                            <input type="text" class="form-control" name="phone" placeholder="Phone Number" id="phone">
                                         </div>
                                     </div>
                                 </div>
@@ -55,18 +58,34 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="projectinput5">Select role</label>
-                                            <select id="projectinput5" name="interested" class="form-control">
-                                                <option value="none" selected="" disabled="">Role</option>
-                                                <option value="design">Group admin</option>
-                                                <option value="development">Normal user</option>
+                                           <label for="role">Select role</label>
+                                           <select name="role" id="role" class="form-control">
+                                                <option value="0" selected="" disabled="">Select Role</option>
+                                                <option value="1">Super Admin</option>
+                                                <option value="2">Admin</option>
+                                                <option value="3">User</option>
 
                                             </select>
                                         </div>
                                     </div>
 
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="projectinput5">Select Company</label>
+                                            <select name="company_id" class="form-control" required>
+                                                <option value="">Select Company</option>
+                                                @foreach($companies as $company)
+                                                <option value="{{$company->id}}">{{$company->company_name}}</option>
+                                                @endforeach
+                                            </select>
+
+                                        </div>
+
+                                    </div>
 
                                 </div>
+
+
 
 
 
@@ -77,7 +96,7 @@
                                 <button type="button" class="btn btn-danger mr-1">
                                     <i class="icon-trash"></i> Cancel
                                 </button>
-                                <button type="button" class="btn btn-success">
+                                <button type="submit" class="btn btn-success">
                                     <i class="icon-note"></i> Save
                                 </button>
                             </div>

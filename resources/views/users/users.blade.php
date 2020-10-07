@@ -49,37 +49,34 @@ color: black">
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        <tr>
-                                            <td class="text-truncate" style="color: black">
 
-                                                Tester
-                                            </td>
-                                            <td class="text-truncate p-1" style="color: black">
-                                                254706255455
-                                            </td>
-                                            <td class="text-truncate p-1" style="color: black">
-                                               test@admin.com
-                                            </td>
-                                            <td class="text-truncate p-1">
-                                                <button type="button" class="btn btn-sm btn-outline-success round">
-                                                   Active
-                                                </button>
+                                        @foreach( $users as $user )
+                                                <tr>
+                                                    <td class="text-truncate" style="color: black">{{ $user->full_name }}</td>
+                                                    <td class="text-truncate p-1" style="color: black">{{ $user->msisdn }}</td>
+                                                    <td class="text-truncate p-1" style="color: black">{{ $user->email }}</td>
+                                                    <td class="text-truncate p-1">
+                                                     @if( $user->active_status == 0 )
+                                                      <button type="button" class="btn btn-sm btn-outline-error round">Inactive</button>
+                                                     @elseif( $user->active_status == 1 )
+                                                        <button type="button" class="btn btn-sm btn-outline-success round">Active</button>
+                                                     @endif
+                                                    </td>
+                                                    <td class="text-truncate p-1" style="color: black">
+                                                      {{ $user->company_id }}
+                                                    </td>
+                                                    <td class="text-truncate p-1" style="color: black">
+                                                        {{ $user->created_at }}
+                                                    </td>
+                                                    <td class="text-truncate p-1">
+                                                        <button type="button" class="btn btn-sm btn-outline-success round">
+                                                           View
+                                                        </button>
 
-                                            </td>
-                                            <td class="text-truncate p-1" style="color: black">
-                                                Guardo
-                                            </td>
-                                            <td class="text-truncate p-1" style="color: black">
-                                                2 weeks ago
-                                            </td>
-                                            <td class="text-truncate p-1">
-                                                <button type="button" class="btn btn-sm btn-outline-success round">
-                                                   View
-                                                </button>
-
-                                            </td>
-                                        </tr>
-
+                                                    </td>
+                                                </tr>
+                                         @endforeach 
+                                               
                                         </tbody>
                                     </table>
                                 </div>
