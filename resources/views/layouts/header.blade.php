@@ -76,11 +76,11 @@
 {{--                        </li>--}}
                     </ul>
                 </li>
-                <li class="has-sub nav-item"><a href="#"><i class="ft-users"></i><span data-i18n=""
+                <li class="has-sub nav-item"><a href="#"><i class="ft-user"></i><span data-i18n=""
 
                                                                                                      class="menu-title">User Management</span></a>
                     <ul class="menu-content">
-
+``
 
                         <li class="nav-item"><a href="{{url('users/group')}}" ><i class=""></i><span
                                     class="menu-title">Companies</span></a>
