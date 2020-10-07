@@ -20,6 +20,12 @@ Route::get('/', function () {
 Route::get('sms/outbox', function () {
     return view('sms/outbox');
 });
+
+Route::get('billing/index', function () {
+    return view('billing/index');
+});
+
+
     Route::get('sms/inbox', function () {
         return view('sms/inbox');
     });

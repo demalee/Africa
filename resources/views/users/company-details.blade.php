@@ -22,7 +22,7 @@
                             <div class="px">
                                 
 	                            <div class="col-md-12">
-					            <button class="btn btn-primary mb-2" data-target="#topUp" data-toggle="modal">Top Up Guardo</button>
+					            <button class="btn btn-primary mb-2" data-target="#topUp" data-toggle="modal">Top Up Company</button>
 					            &nbsp;&nbsp;
 					            <button class="btn btn-primary mb-2">Balance: 3,344,913 units</button>&nbsp;&nbsp;
 					            <button class="btn btn-primary mb-2" data-target="#setRate" data-toggle="modal">Set Rate</button>
