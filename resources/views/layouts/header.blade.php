@@ -40,7 +40,7 @@
 
                                 <li><a href="{{url('sms/inbox')}}" class="menu-item">Inbox</a>
                                 </li>
-                                <li><a href="{{url('coming-soon')}}" class="menu-item">Outbox</a>
+                                <li><a href="{{url('premium/sms')}}" class="menu-item">Outbox</a>
                                 </li>
 
                             </ul>
@@ -52,7 +52,7 @@
 
                                                                                                      class="menu-title">User Management</span></a>
                     <ul class="menu-content">
-``
+
 
                         <li class="nav-item"><a href="{{url('users/companies')}}" ><i class=""></i><span
                                     class="menu-title">Companies</span></a>
@@ -64,9 +64,7 @@
 
                     </ul>
                 </li>
-                <li class="has-sub nav-item"><a href="#"><i class="ft-users"></i><span data-i18n=""
-
-                                                                                       class="menu-title">Group Management</span></a>
+                <li class="has-sub nav-item"><a href="#"><i class="ft-users"></i><span data-i18n="" class="menu-title">Group Management</span></a>
                     <ul class="menu-content">
 
                         <li class="nav-item"><a href="{{url('users/group')}}" ><i class=""></i><span

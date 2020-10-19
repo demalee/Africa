@@ -32,6 +32,9 @@ Route::get('billing/index', function () {
     Route::get('users/userdetails', function () {
         return view('users/userdetails');
     });
+    Route::get('users/report', function () {
+        return view('users/report');
+    });
 Route::post('post-bulk','App\Http\Controllers\OutboxController@postBulk')->name('postbulk');
 
 Route::post('message-members','App\Http\Controllers\OutboxController@SendAllMembers')->name('messagemembers');
@@ -175,6 +178,9 @@ Route::get('launch', function () {
 });
 Route::get('slack', function () {
     return view('slack');
+});
+Route::get('premium/sms', function () {
+    return view('premium/sms');
 });
 
 

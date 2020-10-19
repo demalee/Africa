@@ -30,13 +30,14 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('../app-assets/vendors/css/prism.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ asset('../app-assets/vendors/css/chartist.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ asset('../app-assets/css/app.css')}}">
-{{--    <link rel="stylesheet" href="'{{ asset('ecobba/assets/css/app.min.css')}}">--}}
+    <link rel="stylesheet" href="'{{ asset('ecobba/assets/css/app.min.css')}}">
+
     <!-- Template CSS -->
 
     <!-- Custom style CSS -->
 
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    {{--    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />--}}
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
 
 {{--    <!---Fontawesome css-->--}}
