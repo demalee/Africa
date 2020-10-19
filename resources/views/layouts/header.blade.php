@@ -29,7 +29,9 @@
                                 </li>
                                 <li><a href="{{url('sms/outbox')}}" class="menu-item">Send Express Bulk</a>
                                 </li>
-                                <li><a href="{{url('sms/outbox-blast')}}" class="menu-item">Outbox</a>
+                                <li><a href="{{url('sms/outbox-blast')}}" class="menu-item">Bulk Outbox</a>
+                                </li>
+                                <li><a href="{{url('sms/outbox-blast-trx')}}" class="menu-item">Transactional Outbox</a>
                                 </li>
                                 <li><a href="{{url('sms/scheduled-blast')}}" class="menu-item">Scheduled Bulk</a>
                                 </li>

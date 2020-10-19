@@ -12,6 +12,31 @@ use Carbon\Carbon;
 class SmsController extends Controller
 {
 
+    public function viewSentTrxBulkSMS(){
+       $auth = false;
+       $token = null;
+       $url = "/sms/fetchOutgoingTrxBulkSMS";
+       $apirequest = new ApiRequest();
+       $result = $apirequest->fetchRequest($auth,$token,$url);
+       $outboxSMSs = @$result->response?:[];
+       // dd($outboxSMSs);
+       return view('sms/outbox-blast-trx', compact('outboxSMSs'));
+
+    }
+
+    public function viewIncomingSMS(){
+       $auth = false;
+       $token = null;
+       $url = "/sms/fetchInboxSMS";
+       $apirequest = new ApiRequest();
+       $result = $apirequest->fetchRequest($auth,$token,$url);
+       $inboxSMSs = @$result->response?:[];
+       // dd($inboxSMSs);
+       return view('sms/inbox', compact('inboxSMSs'));
+
+    }
+
+
     public function viewSentBulkSMS(){
        $auth = false;
        $token = null;
@@ -66,9 +91,9 @@ class SmsController extends Controller
 
         
         $body = [
-            "msisdn" => $data['msisdn'],
-            "message" => $data['message'],
-            "sender_id" => $data['code'],
+            "msisdn" => @$data['msisdn'],
+            "message" => @$data['message'],
+            "sender_id" => @$data['code'],
             // "msisdn" => $data['msisdn'],
         ];
 
@@ -89,18 +114,18 @@ class SmsController extends Controller
         $auth = false;
         $token = null;
         $data = $request->all();
-
+        // dd($data);
         
 
-        $date = str_replace('-', "", $data['date']);
-        $time = str_replace('-', "", $data['time']);
+        $date = str_replace('-', "", @$data['date']);
+        $time = str_replace('-', "", @$data['time']);
         $scheduled_time = new Carbon($date.$time);
 
         $body = [
-            "group_id" => $data['group_id'],
-            "message" => $data['message'],
-            "sender_id" => $data['code'],
-            "scheduled_time" => $scheduled_time,
+            "group_id" => @$data['group_id'],
+            "message" => @$data['message'],
+            "sender_id" => @$data['code'],
+            "scheduled_time" => @$scheduled_time,
             "company_id" => 1
         ];
        

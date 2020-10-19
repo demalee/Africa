@@ -27,17 +27,17 @@
                                                                                 {{ csrf_field() }}
                                         <div class="form-body">
 
-                                            <input type="hidden" name="sender_id" value="sender_id">
-                                            <input type="hidden" name="sender_id" value="">
+                                            <!-- <input type="hidden" name="sender_id" value="sender_id"> -->
+                                            <!-- <input type="hidden" name="sender_id" value=""> -->
 
 
                                                 <div class="form-group">
                                                     <label for="issueinput5">Select short code</label>
-                                                    <select id="issueinput5" name="code" class="form-control" data-toggle="tooltip" data-trigger="hover" data-placement="top"
+                                                    <select id="issueinput5" name="code" class="form-control" required data-toggle="tooltip" data-trigger="hover" data-placement="top"
                                                             data-title="Priority">
                                                             <option value="">Select Shortcode</option>
                                                             @foreach($senders as $sender)
-                                                             <option value="{{ $sender->sender_id }}">{{ $sender->sender_id }}</option>
+                                                             <option  name="sender_id" value="{{ $sender->sender_id }}">{{ $sender->sender_id }}</option>
                                                             @endforeach
                                                     </select>
                                                     
@@ -48,10 +48,10 @@
 
 
 
-                                            {{--                                            <br style="clear:both">--}}
+                                            
                                             <div class="form-group ">
                                                 <label  id="messageLabel" for="message">Message Brief</label>
-                                                <textarea  rows="5" type="textarea" id="message" class="form-control input-sm " name="message" placeholder="Message" maxlength="140"></textarea>
+                                                <textarea required rows="5" type="textarea" id="message" class="form-control input-sm " name="message" placeholder="Message" maxlength="140"></textarea>
 
 
                                                 <span class="help-block" style="color: black"><p id="characterLeft" class="help-block " style="color: black">You have reached the limit</p></span>

@@ -12,6 +12,6 @@ class VerifyCsrfToken extends Middleware
      * @var array
      */
     protected $except = [
-        'post-bulk','create-group','postcontacts','create-user','post-company'
+         'post-bulk','create-group','postcontacts','create-user','post-company','post-express-sms'
     ];
 }

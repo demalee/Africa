@@ -162,10 +162,7 @@
                                                     </div></div></div>
                                                     <div class="col-md-4">
                                                         <div class="form-group row">
-                                                    <div class="custom-control custom-radio display-inline-block">
-                                                        <input type="radio" id="customRadioInline2" checked name="customRadioInline1" class="custom-control-input">
-                                                        <label class="custom-control-label" for="customRadioInline2">Flook</label>
-                                                    </div></div></div>
+                                                    </div></div>
                                                 </div>
                                             </div>
                                         </div>
