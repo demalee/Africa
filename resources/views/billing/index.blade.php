@@ -101,16 +101,19 @@
                                     <table id="recent-orders" class="table table-hover table-xl mb-0 stripe">
                                         <thead>
                                         <tr>
+                                            <th class="border-top-0" style="color: black">Date</th>
                                             <th class="border-top-0" style="color: black">Company</th>
                                             <th class="border-top-0" style="color: black">Amount loaded</th>
                                             <th class="border-top-0" style="color: black">Network</th>
-                                            <th class="border-top-0" style="color: black">Added</th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                         <tr>
                                             <td class="text-truncate" style="color: black">
-
+                                                2020-03-22 14:34:20
+                                                
+                                            </td>
+                                             <td class="text-truncate p-1" style="color: black">
                                                 Tester
                                             </td>
                                             <td class="text-truncate p-1" style="color: black">
@@ -119,9 +122,7 @@
                                             <td class="text-truncate p-1" style="color: black">
                                                 Safaricom
                                             </td>
-                                            <td class="text-truncate p-1" style="color: black">
-                                                2020-03-22 14:34:20
-                                            </td>
+                                           
                                         </tr>
 
                                         </tbody>
@@ -141,21 +142,35 @@
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <form>
+                         <form method="post" method="post" action="{{(url('top-up-units'))}}" >
+                                                                                {{ csrf_field() }}
                             <div class="modal-body">
-                                <fieldset class="form-group floating-label-form-group">
-                                    <label for="email">Company name</label>
-                                    <input type="text" class="form-control" name="email" id="email" placeholder="name">
-                                </fieldset>
-                                <br>
-                                <fieldset class="form-group floating-label-form-group">
-                                    <label for="title">Company Phone</label>
-                                    <input type="tel" class="form-control" name="msisdn" id="phone" placeholder="phone">
-                                </fieldset>
+                               
+
+                               <div class="row">
+                                 <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="network">Network</label>
+                                        <select name="network" class="form-control" id="network" required>
+                                            <option value="" diasbled selected>Select Network</option>
+                                             @foreach($networks as $network)
+                                                <option value="{{ $network->id }}" >{{ $network->name }}</option>
+                                              @endforeach  
+                                        </select>
+                                    </div>
+                                 </div>
+                                </div>
+
+                               <!--  <fieldset class="form-group floating-label-form-group">
+                                    <label for="title">Network</label>
+                                    <input type="text" class="form-control" name="network" id="network" placeholder="Network">
+                                </fieldset> -->
+
+
                                 <br>
                                 <fieldset class="form-group floating-label-form-group">
                                     <label for="title">Amount</label>
-                                    <input type="text" class="form-control" name="amount"  placeholder="address">
+                                    <input type="text" class="form-control" name="amount"  placeholder="Amount">
                                 </fieldset>
                                 <br>
 

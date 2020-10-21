@@ -21,9 +21,13 @@ Route::get('sms/outbox', function () {
     return view('sms/outbox');
 });
 
-Route::get('billing/index', function () {
-    return view('billing/index');
-});
+
+
+
+
+// Route::get('billing/index', function () {
+//     return view('billing/index');
+// });
 
 
     Route::get('sms/inbox', function () {
@@ -32,6 +36,13 @@ Route::get('billing/index', function () {
     Route::get('users/userdetails', function () {
         return view('users/userdetails');
     });
+
+
+Route::get('billing/index','App\Http\Controllers\BillingController@index');
+Route::post('top-up-units','App\Http\Controllers\BillingController@topUpUnits')->name('topUpUnits');
+
+
+=======
     Route::get('users/report', function () {
         return view('users/report');
     });
@@ -47,7 +58,10 @@ Route::get('users/usercreate','App\Http\Controllers\UserController@createUsers')
 
 Route::get('users/users','App\Http\Controllers\UserController@fetchSystemUsers');
 
+
+Route::get('sms/inbox','App\Http\Controllers\SmsController@viewIncomingSMS');
 Route::get('sms/outbox-blast','App\Http\Controllers\SmsController@viewSentBulkSMS');
+Route::get('sms/outbox-blast-trx','App\Http\Controllers\SmsController@viewSentTrxBulkSMS');
 Route::get('sms/scheduled-blast','App\Http\Controllers\SmsController@viewScheduledBulkSMS');
 
 
