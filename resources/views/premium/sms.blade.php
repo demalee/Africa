@@ -1,135 +1,50 @@
-<!DOCTYPE html>
-<html lang="en" class="loading">
-
-<head>
-{{--    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">--}}
-{{--    <meta http-equiv="X-UA-Compatible" content="IE=edge">--}}
-{{--    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">--}}
-{{--    <meta name="description"--}}
-{{--          content="Berry sms">--}}
-{{--    <meta name="keywords"--}}
-{{--          content="Berrys sms">--}}
-{{--    <meta name="author" content="berrys sms">--}}
-{{--    <title>AFRICA</title>--}}
-{{--    <link rel="apple-touch-icon" sizes="60x60" href="../app-assets/img/ico/apple-icon-60.html">--}}
-{{--    <link rel="apple-touch-icon" sizes="76x76" href="../app-assets/img/ico/apple-icon-76.html">--}}
-{{--    <link rel="apple-touch-icon" sizes="120x120" href="../app-assets/img/ico/apple-icon-120.html">--}}
-{{--    <link rel="apple-touch-icon" sizes="152x152" href="../app-assets/img/ico/apple-icon-152.html">--}}
-{{--    <link rel="shortcut icon" type="image/x-icon"--}}
-{{--          href="https://pixinvent.com/demo/convex-bootstrap-admin-dashboard-template/app-assets/img/ico/favicon.ico">--}}
-{{--    <link rel="shortcut icon" type="image/png" href="{{asset('../app-assets/img/ico/favicon-32.png')}}">--}}
-{{--    <meta name="apple-mobile-web-app-capable" content="yes">--}}
-{{--    <meta name="apple-touch-fullscreen" content="yes">--}}
-{{--    <meta name="apple-mobile-web-app-status-bar-style" content="default">--}}
-{{--    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>--}}
-
-{{--    <link rel="stylesheet" type="text/css" href="{{ asset('../app-assets/fonts/feather/style.min.css')}}">--}}
-{{--    <link rel="stylesheet" type="text/css" href="{{ asset('../app-assets/fonts/simple-line-icons/style.css')}}">--}}
-{{--    <link rel="stylesheet" type="text/css" href="{{ asset('../app-assets/fonts/font-awesome/css/font-awesome.min.css')}}">--}}
-{{--    <link rel="stylesheet" type="text/css" href="{{ asset('../app-assets/vendors/css/perfect-scrollbar.min.css')}}">--}}
-{{--    <link rel="stylesheet" type="text/css" href="{{ asset('../app-assets/vendors/css/prism.min.css')}}">--}}
-{{--    <link rel="stylesheet" type="text/css" href="{{ asset('../app-assets/vendors/css/chartist.min.css')}}">--}}
-{{--    <link rel="stylesheet" type="text/css" href="{{ asset('../app-assets/css/app.css')}}">--}}
-{{--    <link rel="stylesheet" href="'{{ asset('ecobba/assets/css/app.min.css')}}">--}}
-
-{{--    <!-- Template CSS -->--}}
-
-{{--    <!-- Custom style CSS -->--}}
-
-{{--    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>--}}
-{{--        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />--}}
-
-
-{{--    <!---Fontawesome css-->--}}
-{{--    <link href="{{ asset('/assets/plugins/fontawesome-free/css/all.min.css')}}" rel="stylesheet">--}}
-
-{{--    <!---Ionicons css-->--}}
-{{--    <link href="{{ asset('/assets/plugins/ionicons/css/ionicons.min.css')}}" rel="stylesheet">--}}
-
-{{--    <!---Typicons css-->--}}
-{{--    <link href="{{ asset('/assets/plugins/typicons.font/typicons.css')}}" rel="stylesheet">--}}
-
-<!---Feather css-->
-
-    <!---Jquery.mCustomScrollbar css-->
-
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <meta name="description" content="Convex admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
-    <meta name="keywords" content="admin template, Convex admin template, dashboard template, flat admin template, responsive admin template, web app">
-    <meta name="author" content="PIXINVENT">
-    <title>Basic Form - Convex bootstrap 4 admin dashboard template</title>
-    <link rel="apple-touch-icon" sizes="60x60" href="../app-assets/img/ico/apple-icon-60.html">
-    <link rel="apple-touch-icon" sizes="76x76" href="../app-assets/img/ico/apple-icon-76.html">
-    <link rel="apple-touch-icon" sizes="120x120" href="../app-assets/img/ico/apple-icon-120.html">
-    <link rel="apple-touch-icon" sizes="152x152" href="../app-assets/img/ico/apple-icon-152.html">
-    <link rel="shortcut icon" type="image/x-icon" href="https://pixinvent.com/demo/convex-bootstrap-admin-dashboard-template/app-assets/img/ico/favicon.ico">
-    <link rel="shortcut icon" type="image/png" href="../app-assets/img/ico/favicon-32.png">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-touch-fullscreen" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900%7CMontserrat:300,400,500,600,700,800,900" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../app-assets/fonts/feather/style.min.css">
-    <link rel="stylesheet" type="text/css" href="../app-assets/fonts/simple-line-icons/style.css">
-    <link rel="stylesheet" type="text/css" href="../app-assets/fonts/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/perfect-scrollbar.min.css">
-    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/prism.min.css">
-    <link rel="stylesheet" type="text/css" href="../app-assets/css/app.css">
-
-</head>
-<body data-col="2-columns" class=" 2-columns ">
-
-<div class="wrapper">
-    @include('layouts.header')
-    <div class="main-panel">
-        <div class="main-content">
-            <div class="content-wrapper">
-                <main class="py-4">
-                    <!--end menu-->
-                    @yield('content')
-                </main></div></div></div>
-    <footer class="footer footer-static footer-light">
-        <p class="clearfix text-muted text-center px-2"><span>Copyright  &copy; 2018 <a
-                    href="" id="pixinventLink" target="_blank"
-                    class="text-bold-800 primary darken-2">Africa </a>, All rights reserved. </span></p>
-    </footer>
-
-</div>
-
-
-<script src="../app-assets/vendors/js/core/jquery-3.3.1.min.js"></script>
-<script src="../app-assets/vendors/js/core/popper.min.js"></script>
-<script src="../app-assets/vendors/js/core/bootstrap.min.js"></script>
-<script src="../app-assets/vendors/js/perfect-scrollbar.jquery.min.js"></script>
-<script src="../app-assets/vendors/js/prism.min.js"></script>
-<script src="../app-assets/vendors/js/jquery.matchHeight-min.js"></script>
-<script src="../app-assets/vendors/js/screenfull.min.js"></script>
-<script src="../app-assets/vendors/js/pace/pace.min.js"></script>
-
-
-
-{{--<!-- BEGIN VENDOR JS-->--}}
-{{--<script src="{{ asset('../app-assets/vendors/js/core/jquery-3.3.1.min.js')}}"></script>--}}
-{{--<script src="{{ asset('../app-assets/vendors/js/core/popper.min.js')}}"></script>--}}
-{{--<script src="{{ asset('../app-assets/vendors/js/core/bootstrap.min.js')}}"></script>--}}
-{{--<script src="{{ asset('../app-assets/vendors/js/perfect-scrollbar.jquery.min.js')}}"></script>--}}
-{{--<script src="{{ asset('../app-assets/vendors/js/prism.min.js')}}"></script>--}}
-{{--<script src="{{ asset('../app-assets/vendors/js/jquery.matchHeight-min.js')}}"></script>--}}
-{{--<script src="{{ asset('../app-assets/vendors/js/screenfull.min.js')}}"></script>--}}
-{{--<script src="{{ asset('../app-assets/vendors/js/pace/pace.min.js')}}"></script>--}}
-{{--<!-- BEGIN VENDOR JS-->--}}
-{{--<!-- BEGIN PAGE VENDOR JS-->--}}
-{{--<script src="{{ asset('../app-assets/vendors/js/chartist.min.js')}}"></script>--}}
-{{--<!-- END PAGE VENDOR JS-->--}}
-{{--<!-- BEGIN CONVEX JS-->--}}
-{{--<script src="{{ asset('../app-assets/js/app-sidebar.js')}}"></script>--}}
-{{--<script src="{{ asset('../app-assets/js/notification-sidebar.js')}}"></script>--}}
-{{--<script src="{{ asset('../app-assets/js/customizer.js')}}"></script>--}}
-{{--<!-- END CONVEX JS-->--}}
-{{--<!-- BEGIN PAGE LEVEL JS-->--}}
-{{--<script src="{{ asset('../app-assets/js/dashboard-ecommerce.js')}}"></script>--}}
-<!-- END PAGE LEVEL JS-->
-</body>
-
-</html>
+@extends('layouts.apps')
+@section('content')
+    <section id="coming-soon">
+        <div class="container-fluid">
+            <div class="row full-height-vh">
+                <div class="col-12 d-flex align-items-center justify-content-center gradient-aqua-marine">
+                    <div class="card p-3 box-shadow-2">
+                        <div class="card-header text-center">
+                            {{--                            <img alt="avtar" class="img-fluid mb-3" src="../app-assets/img/logos/logo-color-big.png" width="80">--}}
+                            <h4 class="text-uppercase text-bold-400 grey darken-1">Coming Soon</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="text-center">
+                                <h5 class="card-text pb-2">WE ARE LAUNCHING SOON.</h5>
+                                <div id="clockFlat" class="card-text getting-started pt-1 mt-2 display-inline-block white">
+                                    <div class="clockCard px-3 py-3 mr-3 mb-3 bg-danger bg-darken-5 white box-shadow-2"> <span> </span> <br>
+                                        <p class="lead mt-2 mb-0">2  Weeks </p>
+                                    </div>
+                                    <div class="clockCard px-3 py-3 mr-3 mb-3 bg-danger bg-darken-5 white box-shadow-2"> <span> </span> <br>
+                                        <p class="lead mt-2 mb-0"> Days </p>
+                                    </div>
+                                    <div class="clockCard px-3 py-3 mr-3 mb-3 bg-danger bg-darken-5 white box-shadow-2"> <span> </span> <br>
+                                        <p class="lead mt-2 mb-0"> Hours </p>
+                                    </div>
+                                    <div class="clockCard px-2 py-3 mr-3 mb-3 bg-danger bg-darken-5 white box-shadow-2"> <span> </span> <br>
+                                        <p class="lead mt-2 mb-0"> Minutes </p>
+                                    </div>
+                                    <div class="clockCard px-2 py-3 mr-3 mb-3 bg-danger bg-darken-5 white box-shadow-2"> <span> </span> <br>
+                                        <p class="lead mt-2 mb-0"> Seconds </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 pt-1">
+                                    <p class="card-text lead"></p>
+                                </div>
+                                <div class="col-12 text-center pt-2">
+                                    <p class="socialIcon card-text">
+                                        <a class="grey darken-1"><i class="fa fa-facebook-square"></i></a>
+                                        <a class="grey darken-1"><i class="fa fa-twitter-square"></i></a>
+                                        <a class="grey darken-1"><i class="fa fa-google-plus-square"></i></a>
+                                        <a class="grey darken-1"><i class="fa fa-linkedin-square"></i></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+@endsection
