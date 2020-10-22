@@ -40,7 +40,7 @@
                                                              <option  name="sender_id" value="{{ $sender->sender_id }}">{{ $sender->sender_id }}</option>
                                                             @endforeach
                                                     </select>
-                                                    
+
                                                 </div>
 
 
@@ -48,13 +48,15 @@
 
 
 
-                                            
+
                                             <div class="form-group ">
                                                 <label  id="messageLabel" for="message">Message Brief</label>
-                                                <textarea required rows="5" type="textarea" id="message" class="form-control input-sm " name="message" placeholder="Message" maxlength="140"></textarea>
+                                                <textarea required rows="5" type="textarea" id="message" class="form-control input-sm " name="message" placeholder="Message" maxlength="1000"></textarea>
 
 
-                                                <span class="help-block" style="color: black"><p id="characterLeft" class="help-block " style="color: black">You have reached the limit</p></span>
+                                                <span class="help-block" style="color: black"><p id="characterLeft" class="help-block " style="color: black"></p>
+{{--                                                <p id="message_count" class="help-block " style="color: black"> Message(s)</p>--}}
+                                                </span>
 
                                             </div>
                                             <div class="row">
@@ -92,7 +94,7 @@
                                                         </div>
                                                       </div>
                                                     @endforeach
-                                                    
+
 
                                                 </div>
 
@@ -137,21 +139,17 @@
     </section>
     <script>
         $(document).ready(function(){
-            $('#characterLeft').text('Input a maximum of 160 characters');
+            // $('#characterLeft').text('Input a maximum of 160 character(s)');
             $('#message').keyup(function () {
-                var max = 140;
+                // var max = ;
                 var len = $(this).val().length;
-                if (len >= max) {
-                    $('#characterLeft').text('You have reached the limit');
-                    $('#characterLeft').addClass('red');
-                    $('#btnSubmit').addClass('disabled');
-                }
-                else {
-                    var ch = max - len;
-                    $('#characterLeft').text(ch + ' characters left');
+
+                    var message_count = Math.ceil(len/160);
+                    // $('#message_count').text(message_count + ' Messages(s)')
+                    $('#characterLeft').text(message_count + '  Messages(s) '+len + ' character(s)' );
                     $('#btnSubmit').removeClass('disabled');
                     $('#characterLeft').removeClass('red');
-                }
+
             });
         });
 
