@@ -3,8 +3,8 @@
 <home>
     <div class="card border-left my-lg-0 border-warning border-3">
         <div class="card-block pt-3">
-            <p>App Name: Sandbox</p>
-            <p>Username: sandbox</p>
+            <p style="color: black">App Name: Sandbox</p>
+            <p style="color: black">Username: sandbox</p>
 
         </div>
     </div>
@@ -21,7 +21,7 @@
                             <i class="ft-maximize danger"></i>
                         </div>
                     </div>
-                    <center> <p>No data to display</p></center>
+                    <center> <p style="color: black">No data to display</p></center>
                 </div>
             </div>
             <div class="col-md-6 col-12">
@@ -37,7 +37,7 @@
 
                     </div>
 
-                    <center> <p>No data to display</p></center>
+                    <center> <p style="color: black">No data to display</p></center>
                 </div>
             </div>
             <div class="col-md-6 col-12">
@@ -51,7 +51,7 @@
                             <i class="ft-maximize danger"></i>
                         </div>
                     </div>
-                    <center> <p>No data to display</p></center>
+                    <center> <p style="color: black">No data to display</p></center>
                 </div>
             </div>
             <div class="col-md-6 col-12">
@@ -67,7 +67,7 @@
 
                     </div>
 
-                    <center> <p>No data to display</p></center>
+                    <center> <p style="color: black">No data to display</p></center>
                 </div>
             </div>
         </div></section>

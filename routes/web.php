@@ -42,7 +42,6 @@ Route::get('billing/index','App\Http\Controllers\BillingController@index');
 Route::post('top-up-units','App\Http\Controllers\BillingController@topUpUnits')->name('topUpUnits');
 
 
-
     Route::get('users/report', function () {
         return view('users/report');
     });
