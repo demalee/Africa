@@ -24,8 +24,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1e071f65-6f95-491f-b336-bbcb83b0206b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/users/bulk-group.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/bulk-group.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +203,7 @@
       <workItem from="1602086671999" duration="10043000" />
       <workItem from="1602202883959" duration="5642000" />
       <workItem from="1603107250261" duration="9083000" />
-      <workItem from="1603348293840" duration="2789000" />
+      <workItem from="1603348293840" duration="3687000" />
     </task>
     <servers />
   </component>
