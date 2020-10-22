@@ -146,7 +146,7 @@
 
                     var message_count = Math.ceil(len/160);
                     // $('#message_count').text(message_count + ' Messages(s)')
-                    $('#characterLeft').text(message_count + '  Messages(s) '+len + ' character(s)' );
+                    $('#characterLeft').text(message_count + '  Message(s) '+len + ' character(s)' );
                     $('#btnSubmit').removeClass('disabled');
                     $('#characterLeft').removeClass('red');
 
