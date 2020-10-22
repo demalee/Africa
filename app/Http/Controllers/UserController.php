@@ -87,7 +87,7 @@ class UserController extends Controller
         // dd($body);
         $apirequest = new ApiRequest();
         $result = $apirequest->postRequest($auth,$token,$url,$body);
-
+        // dd($result);
         if( @$result->status == 200 ) {
             Session::flash('success', @$result->response);
             return redirect()->back();
